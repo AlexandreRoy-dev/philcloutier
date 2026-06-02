@@ -183,7 +183,7 @@
     <nav class="fixed w-full z-50 transition-all duration-500 py-6 px-8 lg:px-16" id="navbar">
         <div class="max-w-[1400px] mx-auto flex justify-between items-center">
             <a href="#" class="text-lg font-medium tracking-[0.2em] uppercase text-white hover-target mix-blend-difference z-10" id="logo">
-                Ph. Cloutier
+                Philippe Cloutier
             </a>
             
             <div class="hidden lg:flex space-x-12 text-xs font-medium tracking-[0.15em] uppercase items-center text-white mix-blend-difference z-10" id="nav-links">
@@ -215,12 +215,15 @@
     <!-- Solid Nav Background that fades in -->
     <div id="nav-bg" class="fixed top-0 w-full h-24 bg-brand-bg/95 backdrop-blur-md z-40 opacity-0 transition-opacity duration-500 border-b border-gray-200/50"></div>
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
     <section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-dark">
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=2500" alt="Maison de prestige" class="w-full h-full object-cover hero-bg opacity-70">
+            <!-- Vidéo éclaircie : opacité à 100% et luminosité augmentée -->
+            <video src="./bannervid.mov" class="w-full h-full object-cover hero-bg opacity-100 brightness-110" autoplay loop muted playsinline></video>
         </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+        <!-- Dégradé adouci pour laisser passer plus de lumière -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
         
         <div class="relative z-10 text-center px-6 mt-16 max-w-5xl mx-auto">
            
@@ -230,17 +233,15 @@
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 reveal reveal-delay-2 text-brand-bg/80">
                 <p class="text-sm tracking-[0.2em] uppercase font-light">Courtier Résidentiel</p>
                 <span class="hidden md:block w-12 h-[1px] bg-brand-bg/40"></span>
-                <p class="text-sm tracking-[0.2em] uppercase font-light">Sherbrooke & Environs</p>
+                <!-- Updated Location based on the provided map -->
+                <p class="text-sm tracking-[0.2em] uppercase font-light">Montréal, Repentigny & Environs</p>
             </div>
         </div>
 
-        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 reveal reveal-delay-3 z-10">
-            <span class="text-white/60 text-xs tracking-[0.2em] uppercase">Découvrir</span>
-            <div class="w-[1px] h-12 bg-white/30 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-full bg-white animate-[scrollLine_2s_ease-in-out_infinite]"></div>
-            </div>
-        </div>
-        <style>@keyframes scrollLine { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }</style>
+        <!-- Replaced moving line with a bouncing anchor arrow linking to the next section -->
+        <a href="#a-propos" class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 reveal reveal-delay-3 z-10 hover-target cursor-pointer">
+            <i class="fa-solid fa-arrow-down text-white/80 text-3xl animate-bounce"></i>
+        </a>
     </section>
 
     <!-- Editorial About Section -->
@@ -281,7 +282,6 @@
 
     <!-- Elevated Services Section -->
     <section id="services" class="py-40 px-6 bg-brand-dark text-white relative">
-        <!-- Subtle noise texture or pattern could go here -->
         <div class="max-w-[1400px] mx-auto">
             
             <div class="flex flex-col md:flex-row justify-between items-end mb-24 reveal">
@@ -330,8 +330,9 @@
                     </div>
                     <h3 class="text-3xl font-serif mb-6 group-hover:text-white transition-colors duration-500">Évaluation</h3>
                     <p class="text-brand-bg/60 font-light leading-relaxed mb-10 min-h-[80px]">Recevez une estimation précise et confidentielle de la juste valeur marchande de votre propriété actuelle.</p>
-                    <div class="img-wrap w-full aspect-[4/3] overflow-hidden bg-[#1A1A1A] flex items-center justify-center">
-                        <i class="fa-light fa-chart-line-up text-6xl text-white/20 group-hover:text-white transition-colors duration-700"></i>
+                    <!-- Fixed icon by switching it to a fully functioning background image -->
+                    <div class="img-wrap w-full aspect-[4/3] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation">
                     </div>
                 </div>
 
@@ -346,7 +347,7 @@
             <h2 class="text-4xl md:text-5xl font-serif text-brand-dark leading-snug max-w-4xl mx-auto">
                 "Sa patience, sa transparence et son expertise nous ont mis en confiance immédiatement."
             </h2>
-            <p class="mt-8 text-sm tracking-[0.2em] uppercase text-brand-gray">— Famille Dubois, Sherbrooke</p>
+            <p class="mt-8 text-sm tracking-[0.2em] uppercase text-brand-gray">— Famille Dubois, Repentigny</p>
         </div>
 
         <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-200 border border-gray-200 reveal reveal-delay-1">
