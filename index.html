@@ -506,9 +506,8 @@
                     <a href="https://equipelt.com/" target="_blank" rel="noopener"><img src="https://equipelamarche.com/wp-content/uploads/2021/04/Tranquilli-T_bleu-1-150x58.png" alt="Tranquilli-T" class="h-10 opacity-70 brightness-0 invert hover:opacity-100 transition-opacity"></a>
                 </div>
             </div>
-            <!-- Remplacer YOUR_FORM_ID par l'ID Formspree -->
             <div class="gsap-reveal">
-                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-8">
+                <form id="contact-form" action="https://formspree.io/f/xbdvlnze" method="POST" class="space-y-8">
                     <input type="hidden" name="_next" value="https://pc.roymarketing.ca/merci.html">
                     <input type="hidden" name="_subject" value="Nouveau message — pc.roymarketing.ca">
                     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
@@ -665,13 +664,6 @@
         if (!prefersReducedMotion) setInterval(() => showSlide((currentSlide + 1) % slides.length), 6000);
         const form = document.getElementById('contact-form'), formSubmit = document.getElementById('form-submit'), formStatus = document.getElementById('form-status');
         form.addEventListener('submit', async e => {
-            if (form.action.includes('YOUR_FORM_ID')) {
-                e.preventDefault();
-                formStatus.className = 'text-sm py-3 text-white/50';
-                formStatus.textContent = 'Formulaire en configuration — appelez-nous au 450 472-7220.';
-                formStatus.classList.remove('hidden');
-                return;
-            }
             e.preventDefault();
             formSubmit.disabled = true;
             formSubmit.innerHTML = 'Envoi en cours… <i class="fa-solid fa-spinner fa-spin"></i>';
