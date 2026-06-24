@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci | Philippe Cloutier</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Montserrat','Arial','sans-serif'], serif: ['Playfair Display','serif'] }, colors: { 'brand-bg': '#f7f5ee', 'brand-dark': '#232323', 'brand-red': '#DC1C2E', 'brand-blue': '#003DA5' } } } };
+    </script>
+    <style>
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-up { animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .fade-up-delay { animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards; opacity: 0; }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans min-h-screen flex flex-col antialiased">
+    <header class="py-6 px-8 border-b border-gray-200/60">
+        <a href="./index.html" class="text-sm font-semibold tracking-[0.15em] uppercase text-brand-dark hover:text-brand-blue transition-colors">Philippe Cloutier</a>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center px-6 py-20">
+        <div class="max-w-xl text-center">
+            <div class="w-16 h-16 mx-auto mb-10 rounded-full bg-brand-blue/10 flex items-center justify-center fade-up">
+                <i class="fa-solid fa-check text-brand-blue text-2xl"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-serif mb-6 fade-up">Merci pour votre message.</h1>
+            <p class="text-brand-gray font-light text-lg leading-relaxed mb-4 fade-up-delay">
+                Votre demande a bien été reçue. Philippe Cloutier vous contactera dans les plus brefs délais pour discuter de votre projet immobilier.
+            </p>
+            <p class="text-sm text-brand-gray/70 mb-12 fade-up-delay">En attendant, n'hésitez pas à nous joindre directement au <a href="tel:450-472-7220" class="text-brand-blue hover:underline">450 472-7220</a>.</p>
+            <a href="./index.html" class="inline-flex items-center gap-3 text-sm uppercase tracking-[0.15em] text-brand-blue font-medium border-b border-brand-blue/30 pb-2 hover:border-brand-blue transition-colors fade-up-delay">
+                Retour à l'accueil <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-8 px-6 border-t border-gray-200/60 text-center">
+        <p class="text-[10px] text-brand-gray/60 uppercase tracking-wide mb-2">Chaque bureau est indépendant et autonome. / Each Office Is Independently Owned and Operated.</p>
+        <p class="text-xs text-brand-gray/50">&copy; 2026 Philippe Cloutier · <a href="./politique-confidentialite.html" class="hover:text-brand-blue">Politique de confidentialité</a></p>
+    </footer>
+
+</body>
+</html>
