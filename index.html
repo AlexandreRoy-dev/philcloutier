@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philippe Cloutier | Courtier immobilier — Saint-Eustache</title>
+    <title>Philippe Cloutier | Courtier immobilier, Saint-Eustache</title>
     <meta name="description" content="Philippe Cloutier, courtier immobilier résidentiel RE/MAX CRYSTAL à Saint-Eustache. Services dans les Laurentides, Lanaudière et Laval. Achat, vente et évaluation.">
     <meta name="theme-color" content="#003DA5">
-    <meta property="og:title" content="Philippe Cloutier | Votre allié immobilier">
-    <meta property="og:description" content="Courtier immobilier à Saint-Eustache. Intensité, préparation et accompagnement personnalisé dans les Laurentides, Lanaudière et Laval.">
+    <meta property="og:title" content="Philippe Cloutier | Courtier immobilier, Saint-Eustache">
+    <meta property="og:description" content="Courtier immobilier RE/MAX CRYSTAL à Saint-Eustache. Service humain et accompagnement personnalisé dans les Laurentides, Lanaudière et Laval.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_CA">
     <meta property="og:url" content="https://pc.roymarketing.ca/">
     <meta property="og:image" content="https://pc.roymarketing.ca/philippe-cloutier.avif">
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Philippe Cloutier",
+        "image": "https://pc.roymarketing.ca/philippe-cloutier.avif",
+        "telephone": "+1-438-495-4079",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "479 Bd Arthur-Sauvé, Local 101",
+            "addressLocality": "Saint-Eustache",
+            "addressRegion": "QC",
+            "postalCode": "J7P 2B3",
+            "addressCountry": "CA"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "60"
+        },
+        "sameAs": "https://www.google.com/maps/place/Philippe+Cloutier+-+Courtier+Immobilier+Saint-Eustache/",
+        "url": "https://pc.roymarketing.ca/"
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -72,6 +96,10 @@
         .gsap-reveal { opacity: 0; transform: translateY(60px); }
         .gsap-reveal-left { opacity: 0; transform: translateX(-40px); }
         .gsap-reveal-right { opacity: 0; transform: translateX(40px); }
+        .js-anim-off .gsap-reveal,
+        .js-anim-off .gsap-reveal-left,
+        .js-anim-off .gsap-reveal-right,
+        .js-anim-off .service-card { opacity: 1 !important; transform: none !important; }
 
         .img-wrap { overflow: hidden; }
         .img-wrap img { transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -199,6 +227,9 @@
             .hero-copy-mobile .hero-h1 { font-size: 1.35rem; line-height: 1.2; margin-bottom: 0; }
         }
 
+        .review-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .review-card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px -8px rgba(0,0,0,0.1); }
+
         @media (prefers-reduced-motion: reduce) {
             .hero-bg, .hero-overlay, .marquee-track { animation: none !important; }
             .gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .service-card { opacity: 1 !important; transform: none !important; }
@@ -212,11 +243,13 @@
 
     <nav class="fixed w-full z-50 transition-all duration-500 py-5 px-6 lg:px-16" id="navbar">
         <div class="max-w-[1400px] mx-auto flex justify-between items-center">
-            <a href="#" class="text-sm lg:text-base font-semibold tracking-[0.15em] uppercase text-white hover-target mix-blend-difference z-10" id="logo">
-                Philippe Cloutier
+            <a href="#" class="flex items-center gap-4 hover-target z-10" id="logo">
+                <img src="./logo_remax_crystal_fond_noir.png" data-logo-hero="./logo_remax_crystal_fond_noir.png" data-logo-scrolled="./crystal-supp-noir-diamand.png" alt="RE/MAX CRYSTAL" class="h-10 sm:h-11 lg:h-14 w-auto rounded-sm transition-opacity duration-300" id="nav-remax-logo">
+                <span class="text-sm lg:text-base font-semibold tracking-[0.15em] uppercase text-white mix-blend-difference" id="logo-text">Philippe Cloutier</span>
             </a>
             <div class="hidden lg:flex space-x-10 text-xs font-medium tracking-[0.12em] uppercase items-center text-white mix-blend-difference z-10" id="nav-links">
                 <a href="#a-propos" class="hover-target nav-link">À propos</a>
+                <a href="#equipe" class="hover-target nav-link">Équipe</a>
                 <a href="#services" class="hover-target nav-link">Services</a>
                 <a href="#temoignages" class="hover-target nav-link">Témoignages</a>
                 <a href="#faq" class="hover-target nav-link">FAQ</a>
@@ -238,6 +271,7 @@
         <button id="menu-close" class="absolute top-8 right-8 text-white text-3xl hover-target" aria-label="Fermer">&times;</button>
         <nav class="flex flex-col items-center gap-8 text-white">
             <a href="#a-propos" class="mobile-nav-link text-2xl font-serif hover-target">À propos</a>
+            <a href="#equipe" class="mobile-nav-link text-2xl font-serif hover-target">Équipe</a>
             <a href="#services" class="mobile-nav-link text-2xl font-serif hover-target">Services</a>
             <a href="#temoignages" class="mobile-nav-link text-2xl font-serif hover-target">Témoignages</a>
             <a href="#faq" class="mobile-nav-link text-2xl font-serif hover-target">FAQ</a>
@@ -258,39 +292,31 @@
         <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-16 pt-28 pb-24 lg:py-32">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                 <!-- Portrait + mobile text overlay -->
-                <div class="hero-photo-wrap lg:col-span-5 hero-photo opacity-0">
+                <div class="hero-photo-wrap lg:col-span-5 hero-photo">
                     <div class="hero-portrait relative w-full aspect-[3/4] overflow-hidden border border-white/10 lg:w-80 xl:w-96">
                         <img src="./philippe-cloutier.avif" alt="Philippe Cloutier" class="w-full h-full object-cover object-top">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent lg:from-black/50"></div>
                     </div>
                     <div class="hero-copy-mobile lg:hidden">
-                        <p class="hero-name text-white font-serif opacity-0">Philippe Cloutier</p>
-                        <p class="hero-title text-white/90 tracking-[0.15em] uppercase font-medium opacity-0">Courtier immobilier résidentiel</p>
-                        <p class="hero-eyebrow text-brand-red font-semibold tracking-[0.2em] uppercase opacity-0">RE/MAX CRYSTAL · Saint-Eustache</p>
-                        <h1 class="hero-h1 text-white font-serif opacity-0">
-                            <span class="hero-word inline-block">Votre</span>
-                            <span class="hero-word inline-block"> Allié</span>
-                            <span class="hero-word inline-block text-brand-red"> Immobilier</span>
-                        </h1>
+                        <p class="hero-name text-white font-serif">Philippe Cloutier</p>
+                        <p class="hero-title text-white/90 tracking-[0.15em] uppercase font-medium">Courtier immobilier résidentiel</p>
+                        <p class="hero-eyebrow text-brand-red font-semibold tracking-[0.2em] uppercase">RE/MAX CRYSTAL · Saint-Eustache</p>
+                        <h1 class="hero-h1 text-white font-serif text-xl sm:text-2xl leading-tight">Votre courtier immobilier</h1>
                     </div>
                 </div>
 
                 <!-- Desktop copy + mobile extras below portrait -->
                 <div class="lg:col-span-7 text-center lg:text-left">
                     <div class="hidden lg:block">
-                        <p class="hero-name text-white text-2xl sm:text-3xl lg:text-4xl font-serif mb-2 opacity-0">Philippe Cloutier</p>
-                        <p class="hero-title text-white/90 text-sm sm:text-base tracking-[0.15em] uppercase font-medium mb-1 opacity-0">Courtier immobilier résidentiel</p>
-                        <p class="hero-eyebrow text-brand-red text-xs font-semibold tracking-[0.2em] uppercase mb-8 lg:mb-10 opacity-0">RE/MAX CRYSTAL · Saint-Eustache</p>
-                        <h1 class="hero-h1 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif leading-[1.08] mb-6 lg:mb-8 opacity-0">
-                            <span class="hero-word inline-block opacity-0">Votre</span>
-                            <span class="hero-word inline-block opacity-0">Allié</span>
-                            <span class="hero-word inline-block opacity-0 text-brand-red"> Immobilier</span>
-                        </h1>
+                        <p class="hero-name text-white text-2xl sm:text-3xl lg:text-4xl font-serif mb-2">Philippe Cloutier</p>
+                        <p class="hero-title text-white/90 text-sm sm:text-base tracking-[0.15em] uppercase font-medium mb-1">Courtier immobilier résidentiel</p>
+                        <p class="hero-eyebrow text-brand-red text-xs font-semibold tracking-[0.2em] uppercase mb-8 lg:mb-10">RE/MAX CRYSTAL · Saint-Eustache</p>
+                        <h1 class="hero-h1 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-6 lg:mb-8">Votre courtier immobilier</h1>
                     </div>
 
-                    <p class="hero-territories text-white/60 text-xs tracking-[0.2em] uppercase font-light mb-6 lg:mb-8 opacity-0">Laurentides · Lanaudière · Laval</p>
-                    <p class="hero-tagline text-white/75 font-serif italic text-base md:text-lg lg:text-xl mb-8 lg:mb-10 max-w-xl mx-auto lg:mx-0 opacity-0">« Chaque transaction, une partie qu'on joue à fond. »</p>
-                    <div class="hero-ctas flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 opacity-0">
+                    <p class="hero-territories text-white/60 text-xs tracking-[0.2em] uppercase font-light mb-6 lg:mb-8">Laurentides · Lanaudière · Laval</p>
+                    <p class="hero-tagline text-white/75 font-serif italic text-base md:text-lg lg:text-xl mb-8 lg:mb-10 max-w-xl mx-auto lg:mx-0">Un accompagnement humain et personnalisé, à chaque étape de votre projet immobilier.</p>
+                    <div class="hero-ctas flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
                         <a href="#contact" class="hover-target btn-solid">Discutons de votre projet</a>
                         <a href="#a-propos" class="hover-target btn-outline">En savoir plus</a>
                     </div>
@@ -305,23 +331,23 @@
         <div class="max-w-[1400px] mx-auto">
             <div class="text-center mb-16 gsap-reveal">
                 <p class="text-brand-blue text-xs font-semibold tracking-[0.2em] uppercase mb-4">Ma philosophie</p>
-                <h2 class="text-3xl md:text-5xl font-serif text-brand-dark">De la glace au mandat.</h2>
+                <h2 class="text-3xl md:text-5xl font-serif text-brand-dark">Un service à votre mesure.</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
                 <div class="text-center p-10 bg-brand-bg border border-gray-200/60 gsap-reveal">
-                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-red/30 rounded-full"><i class="fa-solid fa-bolt text-brand-red text-xl"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Intensité</h3>
-                    <p class="text-brand-gray font-light leading-relaxed">On ne gagne pas en talent, on gagne en intensité.</p>
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-red/30 rounded-full"><i class="fa-solid fa-comments text-brand-red text-xl"></i></div>
+                    <h3 class="text-xl font-serif mb-4">Écoute</h3>
+                    <p class="text-brand-gray font-light leading-relaxed">Comprendre vos besoins, vos priorités et votre rythme avant toute décision.</p>
                 </div>
                 <div class="text-center p-10 bg-brand-bg border border-gray-200/60 gsap-reveal">
-                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-blue/30 rounded-full"><i class="fa-solid fa-list-check text-brand-blue text-xl"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Préparation</h3>
-                    <p class="text-brand-gray font-light leading-relaxed">Chaque mandat se prépare comme une saison.</p>
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-blue/30 rounded-full"><i class="fa-solid fa-handshake text-brand-blue text-xl"></i></div>
+                    <h3 class="text-xl font-serif mb-4">Accompagnement</h3>
+                    <p class="text-brand-gray font-light leading-relaxed">Un suivi attentif et rassurant, du premier contact jusqu'à la remise des clés.</p>
                 </div>
                 <div class="text-center p-10 bg-brand-bg border border-gray-200/60 gsap-reveal">
-                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-dark/20 rounded-full"><i class="fa-solid fa-flag-checkered text-brand-dark text-xl"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Persévérance</h3>
-                    <p class="text-brand-gray font-light leading-relaxed">Refuser de lâcher avant la fin.</p>
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-dark/20 rounded-full"><i class="fa-solid fa-heart text-brand-dark text-xl"></i></div>
+                    <h3 class="text-xl font-serif mb-4">Confiance</h3>
+                    <p class="text-brand-gray font-light leading-relaxed">Des conseils clairs et honnêtes pour que vous avanciez en toute sérénité.</p>
                 </div>
             </div>
         </div>
@@ -332,7 +358,7 @@
         <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div class="lg:col-span-5 gsap-reveal-left">
                 <div class="img-wrap aspect-[3/4] overflow-hidden relative group about-image">
-                    <img src="./philippe-cloutier.avif" alt="Philippe Cloutier, courtier immobilier" class="w-full h-full object-cover object-top">
+                    <img src="./philippe-cloutier-beige.jpg" alt="Philippe Cloutier, courtier immobilier" class="w-full h-full object-cover object-top">
                     <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-brand-blue/80 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6"><p class="text-white/90 text-xs tracking-[0.2em] uppercase font-medium">Premier achat · Maison familiale · Condo</p></div>
                 </div>
@@ -340,25 +366,36 @@
             <div class="lg:col-span-1 hidden lg:block"></div>
             <div class="lg:col-span-6 gsap-reveal-right">
                 <p class="text-brand-blue text-xs font-semibold tracking-[0.2em] uppercase mb-6">À propos</p>
-                <h2 class="text-4xl lg:text-5xl font-serif text-brand-dark mb-10 leading-tight">L'intensité au service de vos projets.</h2>
+                <h2 class="text-4xl lg:text-5xl font-serif text-brand-dark mb-10 leading-tight">Un service humain au cœur de vos projets.</h2>
                 <div class="space-y-8 text-brand-gray font-light text-lg leading-relaxed">
-                    <p class="text-xl lg:text-2xl font-serif italic text-brand-dark border-l-2 border-brand-red pl-6">Avant d'être courtier immobilier, j'étais sur la glace. Le hockey et les sports d'endurance m'ont appris une chose essentielle : on ne gagne pas en talent, on gagne en intensité, en préparation et en refusant de lâcher avant la fin. C'est exactement ce que j'apporte à chacun de mes mandats.</p>
-                    <p>Je suis actif dans les <strong class="text-brand-dark font-medium">Laurentides, Lanaudière et Laval</strong>, et j'accompagne mes clients dans toutes sortes de projets : premier achat, maison familiale, condo — peu importe l'objectif, je fonce avec la même énergie. Pour moi, chaque transaction est une partie qu'on joue à fond, du premier coup de fil jusqu'à la signature.</p>
-                    <p>Que vous soyez acheteur ou vendeur, je suis l'allié qu'il vous faut pour traverser votre projet avec confiance et arriver en gagnant : <strong class="text-brand-dark font-medium">les clés en main.</strong></p>
+                    <p class="text-xl lg:text-2xl font-serif italic text-brand-dark border-l-2 border-brand-red pl-6">Pour moi, l'immobilier, c'est avant tout une relation de confiance. J'écoute, je prends le temps de comprendre votre situation et je vous accompagne avec transparence, sans pression, à votre rythme.</p>
+                    <p>Je suis actif dans les <strong class="text-brand-dark font-medium">Laurentides, Lanaudière et Laval</strong>, et j'accompagne mes clients dans toutes sortes de projets : premier achat, maison familiale, condo. Peu importe l'objectif, vous avez un partenaire attentif à vos côtés. Chaque mandat est unique, et c'est cette approche personnalisée qui fait la différence.</p>
+                    <p>Que vous soyez acheteur ou vendeur, je suis là pour vous guider avec clarté et bienveillance tout au long du processus, jusqu'à ce que vous ayez en main <strong class="text-brand-dark font-medium">les clés de votre nouveau chapitre.</strong></p>
                 </div>
-                <div class="mt-12 flex flex-col sm:flex-row sm:items-center gap-6">
-                    <div class="flex items-center gap-4">
-                        <img src="./philippe-cloutier.avif" alt="Philippe Cloutier" class="w-16 h-16 rounded-full object-cover object-top border-2 border-brand-blue/20">
-                        <div>
-                            <p class="text-brand-dark font-semibold">Philippe Cloutier</p>
-                            <p class="text-xs text-brand-gray uppercase tracking-widest mt-1">Courtier immobilier résidentiel</p>
-                        </div>
+                <div class="mt-12 flex items-center gap-4">
+                    <img src="./philippe-cloutier-beige.jpg" alt="Philippe Cloutier" class="w-16 h-16 rounded-full object-cover object-top border-2 border-brand-blue/20">
+                    <div>
+                        <p class="text-brand-dark font-semibold">Philippe Cloutier</p>
+                        <p class="text-xs text-brand-gray uppercase tracking-widest mt-1">Courtier immobilier résidentiel</p>
                     </div>
-                    <a href="https://equipelt.com/" target="_blank" rel="noopener" class="hover-target inline-flex items-center gap-2 text-xs uppercase tracking-widest text-brand-blue font-medium border border-brand-blue/20 px-4 py-2 hover:bg-brand-blue hover:text-white transition-colors">
-                        <i class="fa-solid fa-users"></i> Équipe Lamarche Troini
-                    </a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Équipe -->
+    <section id="equipe" class="py-24 lg:py-32 px-6 bg-[#EEEDE8] border-y border-gray-200/40">
+        <div class="max-w-[1000px] mx-auto text-center gsap-reveal">
+            <p class="text-brand-blue text-xs font-semibold tracking-[0.2em] uppercase mb-4">Équipe</p>
+            <h2 class="text-3xl md:text-5xl font-serif text-brand-dark mb-8">Lamarche Troini</h2>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 mb-10">
+                <img src="./Avec_Lamarche_NOIR.png" alt="Avec Lamarche, ça marche" class="h-14 sm:h-16 w-auto">
+                <img src="./LT _ SCT NOIR.png" alt="Équipe Lamarche Troini" class="h-12 sm:h-14 w-auto max-w-[240px] object-contain">
+            </div>
+            <p class="text-brand-gray font-light text-lg leading-relaxed max-w-2xl mx-auto mb-10">Je collabore avec l'Équipe Lamarche Troini, un groupe de courtiers expérimentés chez RE/MAX CRYSTAL. Ensemble, nous offrons un service humain, personnalisé et efficace pour vos projets immobiliers.</p>
+            <a href="https://equipelt.com/" target="_blank" rel="noopener" class="hover-target inline-flex items-center gap-2 text-xs uppercase tracking-widest text-brand-blue font-medium border border-brand-blue/30 px-6 py-3 hover:bg-brand-blue hover:text-white transition-colors">
+                <i class="fa-solid fa-users"></i> Découvrir l'équipe Lamarche Troini
+            </a>
         </div>
     </section>
 
@@ -386,27 +423,26 @@
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 mt-8 md:mt-0">
                     <a href="#contact" class="hover-target btn-lux text-sm tracking-[0.1em] uppercase font-medium pb-2 border-b border-white/20">Prendre rendez-vous <i class="fa-solid fa-calendar-check icon-inline text-sm"></i></a>
-                    <a href="https://equipelt.com/" target="_blank" rel="noopener" class="hover-target btn-lux text-sm tracking-[0.1em] uppercase font-medium pb-2 text-white/60">Propriétés de l'équipe <i class="fa-solid fa-house-chimney icon-inline text-sm"></i></a>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/10 pt-12 lg:pt-16">
                 <div class="service-card group gsap-reveal">
                     <span class="text-brand-blue font-serif italic text-2xl block mb-6">01</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-blue transition-colors">Achat</h3>
-                    <p class="text-white/60 font-light leading-relaxed mb-8">Premier achat, maison familiale ou condo — je fonce avec la même énergie pour trouver la propriété qui vous correspond.</p>
-                    <div class="img-wrap aspect-[4/3]"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Achat"></div>
+                    <p class="text-white/60 font-light leading-relaxed mb-8">Premier achat, maison familiale ou condo. Je vous accompagne avec attention pour trouver la propriété qui vous correspond.</p>
+                    <div class="img-wrap aspect-[4/3]"><img src="./service-achat.jpg" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Couple visitant une maison"></div>
                 </div>
                 <div class="service-card group gsap-reveal">
                     <span class="text-brand-red font-serif italic text-2xl block mb-6">02</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-red transition-colors">Vente</h3>
-                    <p class="text-white/60 font-light leading-relaxed mb-8">Du premier coup de fil à la signature, une mise en marché rigoureuse pour vendre au meilleur prix.</p>
-                    <div class="img-wrap aspect-[4/3]"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Vente"></div>
+                    <p class="text-white/60 font-light leading-relaxed mb-8">Du premier contact à la signature, une mise en marché soignée et un accompagnement personnalisé pour vendre au meilleur prix.</p>
+                    <div class="img-wrap aspect-[4/3]"><img src="./service-vente.jpg" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
                 </div>
                 <div class="service-card group gsap-reveal">
                     <span class="text-white/40 font-serif italic text-2xl block mb-6">03</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4">Évaluation</h3>
-                    <p class="text-white/60 font-light leading-relaxed mb-8">Estimation précise et confidentielle — sans engagement, en toute transparence.</p>
-                    <div class="img-wrap aspect-[4/3]"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation"></div>
+                    <p class="text-white/60 font-light leading-relaxed mb-8">Estimation précise et confidentielle, sans engagement, en toute transparence.</p>
+                    <div class="img-wrap aspect-[4/3]"><img src="./service-evaluation.jpg" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Salon d'une propriété résidentielle"></div>
                 </div>
             </div>
         </div>
@@ -415,32 +451,26 @@
     <!-- Témoignages -->
     <section id="temoignages" class="py-24 lg:py-40 px-6 bg-[#EEEDE8]">
         <div class="max-w-[1400px] mx-auto">
-            <div class="text-center mb-16 gsap-reveal">
-                <i class="fa-solid fa-quote-right text-brand-blue/20 text-5xl mb-8"></i>
-                <div class="testimonial-slide active">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-brand-dark leading-snug max-w-4xl mx-auto">« Sa patience, sa transparence et son expertise nous ont mis en confiance immédiatement. »</h2>
-                    <p class="mt-8 text-sm tracking-[0.2em] uppercase text-brand-gray">— Famille Dubois, Repentigny</p>
+            <div class="text-center mb-12 lg:mb-16 gsap-reveal">
+                <p class="text-brand-blue text-xs font-semibold tracking-[0.2em] uppercase mb-4">Témoignages</p>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-brand-dark leading-snug max-w-3xl mx-auto mb-6">La confiance de mes clients.</h2>
+                <div id="google-rating-summary" class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+                    <div class="flex items-center gap-2 text-brand-blue">
+                        <i class="fa-brands fa-google text-2xl"></i>
+                        <span class="text-3xl font-serif text-brand-dark" id="google-rating-score">5.0</span>
+                        <div class="flex gap-0.5 text-brand-blue text-sm" aria-hidden="true">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-brand-gray font-light"><span id="google-review-count">60</span> avis Google · <a href="#" id="google-profile-link" target="_blank" rel="noopener" class="text-brand-blue hover:underline hover-target">Philippe Cloutier, Courtier Immobilier Saint-Eustache</a></p>
                 </div>
-                <div class="testimonial-slide">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-brand-dark leading-snug max-w-4xl mx-auto">« Vente rapide et efficace de mon condo grâce à Philippe. Stratégie marketing impeccable, accompagnement rigoureux. Je recommande sans hésiter. »</h2>
-                    <p class="mt-8 text-sm tracking-[0.2em] uppercase text-brand-gray">— M. Alain, Vendeur</p>
-                </div>
-                <div class="flex justify-center gap-2 mt-8">
-                    <button class="testimonial-dot w-8 h-1 bg-brand-blue hover-target" data-index="0"></button>
-                    <button class="testimonial-dot w-8 h-1 bg-gray-300 hover-target" data-index="1"></button>
-                </div>
-            </div>
-            <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-200 border border-gray-200 gsap-reveal">
-                <div class="bg-[#EEEDE8] p-10 lg:p-16 flex flex-col justify-between">
-                    <p class="text-lg font-light text-brand-gray leading-relaxed mb-8">« Philippe a su nous guider avec rigueur et énergie tout au long de notre achat. Un vrai partenaire de confiance. »</p>
-                    <div><p class="font-serif italic text-xl text-brand-dark mb-1">Famille M.</p><p class="text-xs uppercase tracking-widest text-brand-blue">Acheteurs · Laval</p></div>
-                </div>
-                <div class="bg-brand-blue text-white p-10 lg:p-16 flex flex-col justify-center items-center text-center">
-                    <h3 class="text-2xl lg:text-3xl font-serif mb-6">Partagez votre succès</h3>
-                    <p class="font-light text-white/80 mb-10">Votre satisfaction est ma plus belle signature.</p>
-                    <a href="https://www.facebook.com/philippe.cloutier.01?locale=fr_CA" target="_blank" rel="noopener" class="hover-target btn-lux text-sm tracking-[0.1em] uppercase pb-2 border-b border-white/30">Laisser un avis <i class="fa-brands fa-facebook-f ml-2"></i></a>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#" id="google-reviews-link" target="_blank" rel="noopener" class="hover-target btn-lux text-sm tracking-[0.1em] uppercase text-brand-blue font-medium pb-2 border-b border-brand-blue/30">Voir tous les avis <i class="fa-solid fa-arrow-up-right-from-square icon-inline text-sm"></i></a>
+                    <a href="#" id="google-write-review-link" target="_blank" rel="noopener" class="hover-target btn-lux text-sm tracking-[0.1em] uppercase text-brand-gray font-medium pb-2 border-b border-gray-300">Laisser un avis <i class="fa-brands fa-google icon-inline text-sm"></i></a>
                 </div>
             </div>
+            <div id="google-reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gsap-reveal"></div>
+            <p id="google-reviews-loading" class="text-center text-brand-gray font-light text-sm mt-8">Chargement des avis Google…</p>
         </div>
     </section>
 
@@ -465,7 +495,7 @@
                         <h4 class="text-lg lg:text-xl font-serif group-hover:text-brand-blue transition-colors">Quel est le processus de vente type ?</h4>
                         <i class="fa-solid fa-plus faq-icon text-brand-gray transition-transform duration-500 shrink-0"></i>
                     </div>
-                    <div class="faq-answer"><p class="text-brand-gray font-light leading-relaxed pb-8 pr-4">De l'estimation initiale à la signature chez le notaire — je m'occupe de chaque détail, du premier coup de fil jusqu'à la remise des clés.</p></div>
+                    <div class="faq-answer"><p class="text-brand-gray font-light leading-relaxed pb-8 pr-4">De l'estimation initiale à la signature chez le notaire, je m'occupe de chaque détail, du premier contact jusqu'à la remise des clés.</p></div>
                 </div>
                 <div class="faq-item border-b border-gray-200 group">
                     <div class="faq-question py-6 lg:py-8 flex justify-between items-center cursor-pointer hover-target gap-4">
@@ -479,7 +509,7 @@
                         <h4 class="text-lg lg:text-xl font-serif group-hover:text-brand-blue transition-colors">Quels sont les délais habituels ?</h4>
                         <i class="fa-solid fa-plus faq-icon text-brand-gray transition-transform duration-500 shrink-0"></i>
                     </div>
-                    <div class="faq-answer"><p class="text-brand-gray font-light leading-relaxed pb-8 pr-4">Ma stratégie vise à créer un momentum dès les premiers jours — préparation rigoureuse pour le meilleur résultat dans les meilleurs délais.</p></div>
+                    <div class="faq-answer"><p class="text-brand-gray font-light leading-relaxed pb-8 pr-4">Chaque projet est différent. Je prends le temps de bien préparer la mise en marché pour viser le meilleur résultat, dans des délais réalistes et en gardant le contact avec vous à chaque étape.</p></div>
                 </div>
             </div>
         </div>
@@ -502,14 +532,13 @@
                     <div><p class="text-white/40 text-xs tracking-[0.2em] uppercase mb-2">Territoire</p><p class="text-xl font-light">Saint-Eustache</p><p class="text-sm text-white/50 mt-1">Laurentides · Lanaudière · Laval</p></div>
                 </div>
                 <div class="flex flex-wrap items-center gap-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/ReMax_logo.svg/200px-ReMax_logo.svg.png" alt="RE/MAX" class="h-8 opacity-90 brightness-0 invert">
-                    <a href="https://equipelt.com/" target="_blank" rel="noopener"><img src="https://equipelamarche.com/wp-content/uploads/2021/04/Tranquilli-T_bleu-1-150x58.png" alt="Tranquilli-T" class="h-10 opacity-70 brightness-0 invert hover:opacity-100 transition-opacity"></a>
+                    <img src="./logo_remax_crystal_fond_noir.png" alt="RE/MAX CRYSTAL" class="h-10 opacity-90 brightness-0 invert">
                 </div>
             </div>
             <div class="gsap-reveal">
                 <form id="contact-form" action="https://formspree.io/f/xbdvlnze" method="POST" class="space-y-8">
                     <input type="hidden" name="_next" value="https://pc.roymarketing.ca/merci.html">
-                    <input type="hidden" name="_subject" value="Nouveau message — pc.roymarketing.ca">
+                    <input type="hidden" name="_subject" value="Nouveau message, pc.roymarketing.ca">
                     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <input type="text" name="name" required class="input-lux text-white hover-target" placeholder="Prénom & Nom *">
@@ -546,7 +575,7 @@
         <div class="max-w-[1400px] mx-auto">
             <h2 class="text-[12vw] lg:text-[10vw] leading-none font-serif tracking-tighter mb-12 text-center text-white/5 select-none">CLOUTIER</h2>
             <div class="flex flex-col items-center gap-6 mb-10 text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/ReMax_logo.svg/160px-ReMax_logo.svg.png" alt="RE/MAX" class="h-6 opacity-60 brightness-0 invert">
+                <img src="./logo_remax_crystal_fond_noir.png" alt="RE/MAX CRYSTAL" class="h-8 opacity-80 brightness-0 invert">
                 <p class="text-[10px] tracking-wide text-white/40 max-w-2xl uppercase">Courtier immobilier résidentiel · RE/MAX CRYSTAL · Équipe Lamarche Troini</p>
                 <p class="text-[10px] tracking-wide text-white/30 max-w-2xl uppercase">Chaque bureau est indépendant et autonome. / Each Office Is Independently Owned and Operated.</p>
             </div>
@@ -554,7 +583,7 @@
                 <p class="text-xs text-white/40">&copy; 2026 Philippe Cloutier.</p>
                 <div class="flex gap-6 text-xs text-white/50">
                     <a href="./politique-confidentialite.html" class="hover-target hover:text-white">Politique de confidentialité</a>
-                    <a href="https://equipelt.com/" target="_blank" rel="noopener" class="hover-target hover:text-white">Équipe Lamarche Troini</a>
+                    <a href="#equipe" class="hover-target hover:text-white">Équipe Lamarche Troini</a>
                 </div>
                 <div class="flex gap-6">
                     <a href="https://www.facebook.com/philippe.cloutier.01?locale=fr_CA" target="_blank" rel="noopener" class="hover-target text-white/50 hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
@@ -579,24 +608,87 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script>
+        const GOOGLE_BUSINESS = {
+            profileUrl: 'https://www.google.com/maps/place/Philippe+Cloutier+-+Courtier+Immobilier+Saint-Eustache/@45.5671848,-73.9071601,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc92f4626e8af7f:0x70d4aebb7769fe0c!8m2!3d45.5671848!4d-73.9071601!16s%2Fg%2F11z583fr78',
+            reviewUrl: 'https://www.google.com/maps/place/Philippe+Cloutier+-+Courtier+Immobilier+Saint-Eustache/@45.5671848,-73.9071601,17z/data=!4m8!3m7!1s0x4cc92f4626e8af7f:0x70d4aebb7769fe0c!8m2!3d45.5671848!4d-73.9071601!9m1!1b1!16s%2Fg%2F11z583fr78',
+            businessName: 'Philippe Cloutier, Courtier Immobilier Saint-Eustache',
+            averageRating: 5.0,
+            totalReviews: 60
+        };
+
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function renderGoogleReviews(data) {
+            const profile = data.profileUrl || GOOGLE_BUSINESS.profileUrl;
+            const reviewUrl = data.reviewUrl || profile;
+            const rating = data.averageRating || GOOGLE_BUSINESS.averageRating;
+            const total = data.totalReviews || GOOGLE_BUSINESS.totalReviews;
+            const reviews = data.reviews || [];
+
+            document.getElementById('google-rating-score').textContent = Number(rating).toFixed(1);
+            document.getElementById('google-review-count').textContent = total;
+            const profileLink = document.getElementById('google-profile-link');
+            profileLink.href = profile;
+            profileLink.textContent = data.businessName || GOOGLE_BUSINESS.businessName;
+            document.getElementById('google-reviews-link').href = profile;
+            document.getElementById('google-write-review-link').href = reviewUrl;
+
+            const grid = document.getElementById('google-reviews-grid');
+            const loading = document.getElementById('google-reviews-loading');
+            if (!reviews.length) {
+                grid.innerHTML = '';
+                loading.textContent = 'Consultez les ' + total + ' avis sur la fiche Google de Philippe Cloutier.';
+                loading.classList.add('gsap-reveal');
+                return;
+            }
+            loading.classList.add('hidden');
+            grid.innerHTML = reviews.slice(0, 6).map(r => `
+                <article class="review-card bg-white border border-gray-200/80 p-8 flex flex-col h-full">
+                    <div class="flex items-center gap-1 text-brand-blue text-xs mb-4" aria-label="${r.rating || 5} étoiles sur 5">
+                        ${'<i class="fa-solid fa-star"></i>'.repeat(r.rating || 5)}
+                    </div>
+                    <p class="text-brand-gray font-light leading-relaxed flex-grow mb-6">« ${escapeHtml(r.text)} »</p>
+                    <div>
+                        <p class="font-serif text-brand-dark">${escapeHtml(r.author)}</p>
+                        ${r.date ? `<p class="text-xs text-brand-gray/70 mt-1 uppercase tracking-wider">${escapeHtml(r.date)}</p>` : ''}
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        fetch('./google-reviews.json')
+            .then(res => res.ok ? res.json() : GOOGLE_BUSINESS)
+            .then(data => renderGoogleReviews(data))
+            .catch(() => renderGoogleReviews(GOOGLE_BUSINESS));
+
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const revealStatic = () => document.body.classList.add('js-anim-off');
+
         let lenis;
-        if (!prefersReducedMotion && typeof Lenis !== 'undefined') {
+        try {
+        if (!prefersReducedMotion && typeof Lenis !== 'undefined' && typeof gsap !== 'undefined') {
             lenis = new Lenis({ duration: 1.4, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-            lenis.on('scroll', ScrollTrigger.update);
+            if (typeof ScrollTrigger !== 'undefined') {
+                lenis.on('scroll', ScrollTrigger.update);
+            }
             gsap.ticker.add((time) => lenis.raf(time * 1000));
             gsap.ticker.lagSmoothing(0);
         }
-        if (!prefersReducedMotion && typeof gsap !== 'undefined') {
+        if (!prefersReducedMotion && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
             gsap.registerPlugin(ScrollTrigger);
-            gsap.to('.hero-photo', { opacity: 1, x: 0, duration: 1.2, delay: 0.2, ease: 'power3.out', from: { x: -30 } });
-            gsap.utils.toArray('.hero-name').forEach(el => gsap.to(el, { opacity: 1, duration: 0.8, delay: 0.4 }));
-            gsap.utils.toArray('.hero-title').forEach(el => gsap.to(el, { opacity: 1, duration: 0.8, delay: 0.55 }));
-            gsap.utils.toArray('.hero-eyebrow').forEach(el => gsap.to(el, { opacity: 1, duration: 0.8, delay: 0.7 }));
-            gsap.utils.toArray('.hero-h1').forEach(el => gsap.to(el, { opacity: 1, duration: 0.8, delay: 0.75 }));
-            gsap.to('.hero-word', { opacity: 1, y: 0, duration: 1, stagger: 0.12, delay: 0.85, ease: 'power3.out', from: { y: 40 } });
-            gsap.to('.hero-territories, .hero-tagline', { opacity: 1, stagger: 0.15, delay: 1.3 });
-            gsap.to('.hero-ctas', { opacity: 1, delay: 1.6 });
+            gsap.from('.hero-photo', { opacity: 0, x: -30, duration: 1.2, delay: 0.2, ease: 'power3.out' });
+            gsap.utils.toArray('.hero-name').forEach(el => gsap.from(el, { opacity: 0, duration: 0.8, delay: 0.4 }));
+            gsap.utils.toArray('.hero-title').forEach(el => gsap.from(el, { opacity: 0, duration: 0.8, delay: 0.55 }));
+            gsap.utils.toArray('.hero-eyebrow').forEach(el => gsap.from(el, { opacity: 0, duration: 0.8, delay: 0.7 }));
+            gsap.utils.toArray('.hero-h1').forEach(el => gsap.from(el, { opacity: 0, y: 30, duration: 1, delay: 0.85, ease: 'power3.out' }));
+            gsap.from('.hero-territories, .hero-tagline', { opacity: 0, stagger: 0.15, delay: 1.3 });
+            gsap.from('.hero-ctas', { opacity: 0, delay: 1.6 });
             gsap.utils.toArray('.gsap-reveal').forEach(el => gsap.to(el, { opacity: 1, y: 0, duration: 1.2, scrollTrigger: { trigger: el, start: 'top 85%', once: true } }));
             gsap.utils.toArray('.gsap-reveal-left').forEach(el => gsap.to(el, { opacity: 1, x: 0, duration: 1.2, scrollTrigger: { trigger: el, start: 'top 85%', once: true } }));
             gsap.utils.toArray('.gsap-reveal-right').forEach(el => gsap.to(el, { opacity: 1, x: 0, duration: 1.2, scrollTrigger: { trigger: el, start: 'top 85%', once: true } }));
@@ -611,7 +703,10 @@
             const heroVideo = document.querySelector('.parallax-hero');
             if (heroVideo) gsap.to(heroVideo, { yPercent: 15, ease: 'none', scrollTrigger: { trigger: heroVideo.closest('section'), start: 'top top', end: 'bottom top', scrub: true } });
         } else {
-            document.querySelectorAll('.gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .hero-photo, .hero-name, .hero-title, .hero-h1, .hero-word, .hero-eyebrow, .hero-territories, .hero-tagline, .hero-ctas, .service-card').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
+            revealStatic();
+        }
+        } catch (e) {
+            revealStatic();
         }
         const cursorDot = document.getElementById('cursor-dot'), cursorRing = document.getElementById('cursor-ring');
         let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
@@ -623,16 +718,21 @@
             t.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
             t.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
         });
-        const navBg = document.getElementById('nav-bg'), logo = document.getElementById('logo'), navLinks = document.getElementById('nav-links'), menuBtn = document.getElementById('menu-btn'), navPhone = document.getElementById('nav-phone');
+        const navBg = document.getElementById('nav-bg'), logo = document.getElementById('logo'), logoText = document.getElementById('logo-text'), navRemaxLogo = document.getElementById('nav-remax-logo'), navLinks = document.getElementById('nav-links'), menuBtn = document.getElementById('menu-btn'), navPhone = document.getElementById('nav-phone');
         function updateNav() {
             const scrolled = window.scrollY > 50;
             navBg.classList.toggle('opacity-0', !scrolled);
-            [logo, navLinks, menuBtn, navPhone].forEach(el => {
+            [logoText, navLinks, menuBtn, navPhone].forEach(el => {
                 if (!el) return;
                 el.classList.toggle('mix-blend-difference', !scrolled);
                 el.classList.toggle('text-white', !scrolled);
                 el.classList.toggle('text-brand-dark', scrolled);
             });
+            if (navRemaxLogo) {
+                const nextSrc = scrolled ? navRemaxLogo.dataset.logoScrolled : navRemaxLogo.dataset.logoHero;
+                if (navRemaxLogo.getAttribute('src') !== nextSrc) navRemaxLogo.setAttribute('src', nextSrc);
+                navRemaxLogo.classList.toggle('rounded-sm', !scrolled);
+            }
             if (navPhone) navPhone.classList.toggle('hover:text-brand-blue', scrolled);
         }
         window.addEventListener('scroll', updateNav);
@@ -657,11 +757,6 @@
                 if (!was) item.classList.add('active');
             });
         });
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.testimonial-slide'), dots = document.querySelectorAll('.testimonial-dot');
-        function showSlide(i) { currentSlide = i; slides.forEach((s, idx) => s.classList.toggle('active', idx === i)); dots.forEach((d, idx) => { d.classList.toggle('bg-brand-blue', idx === i); d.classList.toggle('bg-gray-300', idx !== i); }); }
-        dots.forEach(d => d.addEventListener('click', () => showSlide(+d.dataset.index)));
-        if (!prefersReducedMotion) setInterval(() => showSlide((currentSlide + 1) % slides.length), 6000);
         const form = document.getElementById('contact-form'), formSubmit = document.getElementById('form-submit'), formStatus = document.getElementById('form-status');
         form.addEventListener('submit', async e => {
             e.preventDefault();
