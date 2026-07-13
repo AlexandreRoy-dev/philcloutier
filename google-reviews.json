@@ -6,40 +6,40 @@
   "totalReviews": 60,
   "reviews": [
     {
-      "author": "Heather Roffey",
-      "rating": 5,
-      "text": "Had a wonderful home-searching and buying experience with Philippe. Excellent communication and availability. Understood our limitations and desires. Helped us find and purchase exactly what we were looking for. Highly recommended!",
-      "date": "Il y a un mois"
-    },
-    {
-      "author": "Justin Dussault",
-      "rating": 5,
-      "text": "Excellent service!",
-      "date": "Il y a un mois"
-    },
-    {
       "author": "Jacob Mattie",
       "rating": 5,
-      "text": "A true professional! Philippe guided us throughout our transaction, and we were impressed by his efficiency. Always available, always clear. The service was truly excellent. We felt we were in good hands from start to finish.",
-      "date": "Il y a un mois"
+      "text": "Un vrai pro ! Philippe nous a accompagnés tout au long de notre transaction et on a été impressionnés par son efficacité. Toujours disponible, toujours clair. Le service était franchement solide. On s'est sentis entre bonnes mains du début à la fin.",
+      "date": "Il y a 2 mois"
+    },
+    {
+      "author": "Mathis Caron",
+      "rating": 5,
+      "text": "Excellent service du début à la fin ! Très professionnel, disponible et à l'écoute de nos besoins. Grâce à son expertise et ses conseils, tout le processus s'est déroulé facilement et sans stress. Toujours rapide pour répondre à nos questions et très transparent dans ses explications. Je recommande fortement ce courtier immobilier à toute personne qui veut vendre ou acheter en confiance !",
+      "date": "Il y a 2 mois"
     },
     {
       "author": "Gabriel Marcoux",
       "rating": 5,
-      "text": "Excellent experience with Philippe; he guided us throughout the entire process! Work with him, you won't be disappointed.",
-      "date": "Il y a un mois"
+      "text": "Super expérience avec Philippe, il nous as accompagné tout au long du processus ! Faites affaire avec lui, vous ne serez pas déçu.",
+      "date": "Il y a 2 mois"
     },
     {
       "author": "Trystan",
       "rating": 5,
-      "text": "Philippe truly offers excellent service. He's friendly yet professional, and everything is done with complete transparency.",
-      "date": "Il y a un mois"
+      "text": "Philippe offre vraiment un service de qualité. Il est amical tout en étant professionnel et tout se fait en parfaite transparence.",
+      "date": "Il y a 2 mois"
     },
     {
       "author": "Agence Élite Photo-Pro",
       "rating": 5,
-      "text": "An exceptional broker who is always a pleasure to work with! Very professional, organized, and detail-oriented, which greatly facilitates our work in the field. Properties are always well-prepared and presented in the best possible light. We recommend him without hesitation!",
-      "date": "Il y a un mois"
+      "text": "Un courtier exceptionnel avec qui il est toujours agréable de collaborer ! Très professionnel, organisé et attentif aux détails, ce qui facilite énormément notre travail sur le terrain. Les propriétés sont toujours bien préparées et mises en valeur. On recommande sans hésitation !",
+      "date": "Il y a 2 mois"
+    },
+    {
+      "author": "Anik Girouard",
+      "rating": 5,
+      "text": "Nous avons reçu un très bon service de la part de Philippe. Très efficace et professionnel! Je le recommande!!",
+      "date": "Il y a 2 mois"
     }
   ]
 }

@@ -169,8 +169,16 @@
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
         .hero-bg { animation: slowZoom 12s ease-out forwards; }
+        .hero-bg-fallback { animation: slowZoom 12s ease-out forwards; }
         .hero-overlay { animation: breathe 6s ease-in-out infinite; }
         .marquee-track { animation: marquee 30s linear infinite; }
+
+        /* Safari mobile: .mov often fails; keep a real-estate still, never a portrait poster */
+        @media (max-width: 1023px) {
+            .parallax-hero video.hero-bg {
+                display: none;
+            }
+        }
 
         .testimonial-slide { display: none; opacity: 0; transition: opacity 0.8s ease; }
         .testimonial-slide.active { display: block; opacity: 1; }
@@ -231,7 +239,7 @@
         .review-card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px -8px rgba(0,0,0,0.1); }
 
         @media (prefers-reduced-motion: reduce) {
-            .hero-bg, .hero-overlay, .marquee-track { animation: none !important; }
+            .hero-bg, .hero-bg-fallback, .hero-overlay, .marquee-track { animation: none !important; }
             .gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .service-card { opacity: 1 !important; transform: none !important; }
         }
     </style>
@@ -282,8 +290,12 @@
 
     <!-- Hero -->
     <section class="relative min-h-screen w-full flex items-center overflow-hidden bg-brand-dark">
-        <div class="absolute inset-0 parallax-hero">
-            <video src="./bannervid.mov" class="w-full h-full object-cover hero-bg opacity-90 brightness-105" autoplay loop muted playsinline poster="./philippe-cloutier.avif"></video>
+        <div class="absolute inset-0 parallax-hero overflow-hidden">
+            <img src="./achat.webp" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover hero-bg-fallback opacity-90 brightness-105">
+            <video class="absolute inset-0 w-full h-full object-cover hero-bg opacity-90 brightness-105" autoplay loop muted playsinline preload="metadata" poster="./achat.webp">
+                <source src="./bannervid.mov" type="video/quicktime">
+                <source src="./bannervid.mov" type="video/mp4">
+            </video>
         </div>
         <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70 hero-overlay"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
@@ -430,19 +442,19 @@
                     <span class="text-brand-blue font-serif italic text-2xl block mb-6">01</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-blue transition-colors">Achat</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Premier achat, maison familiale ou condo. Je vous accompagne avec attention pour trouver la propriété qui vous correspond.</p>
-                    <div class="img-wrap aspect-[4/3]"><img src="./service-achat.jpg" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Couple visitant une maison"></div>
+                    <div class="img-wrap aspect-[4/3]"><img src="./achat.webp" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison résidentielle"></div>
                 </div>
                 <div class="service-card group gsap-reveal">
                     <span class="text-brand-red font-serif italic text-2xl block mb-6">02</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-red transition-colors">Vente</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Du premier contact à la signature, une mise en marché soignée et un accompagnement personnalisé pour vendre au meilleur prix.</p>
-                    <div class="img-wrap aspect-[4/3]"><img src="./service-vente.jpg" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
+                    <div class="img-wrap aspect-[4/3]"><img src="./vente.webp" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
                 </div>
                 <div class="service-card group gsap-reveal">
                     <span class="text-white/40 font-serif italic text-2xl block mb-6">03</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4">Évaluation</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Estimation précise et confidentielle, sans engagement, en toute transparence.</p>
-                    <div class="img-wrap aspect-[4/3]"><img src="./service-evaluation.jpg" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Salon d'une propriété résidentielle"></div>
+                    <div class="img-wrap aspect-[4/3]"><img src="./eval.webp" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation de propriété"></div>
                 </div>
             </div>
         </div>
@@ -701,7 +713,9 @@
             const aboutImg = document.querySelector('.about-image img');
             if (aboutImg) gsap.to(aboutImg, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.about-image', start: 'top bottom', end: 'bottom top', scrub: true } });
             const heroVideo = document.querySelector('.parallax-hero');
-            if (heroVideo) gsap.to(heroVideo, { yPercent: 15, ease: 'none', scrollTrigger: { trigger: heroVideo.closest('section'), start: 'top top', end: 'bottom top', scrub: true } });
+            if (heroVideo && window.matchMedia('(min-width: 1024px)').matches) {
+                gsap.to(heroVideo, { yPercent: 15, ease: 'none', scrollTrigger: { trigger: heroVideo.closest('section'), start: 'top top', end: 'bottom top', scrub: true } });
+            }
         } else {
             revealStatic();
         }
