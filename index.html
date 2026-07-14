@@ -442,19 +442,19 @@
                     <span class="text-brand-blue font-serif italic text-2xl block mb-6">01</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-blue transition-colors">Achat</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Premier achat, maison familiale ou condo. Je vous accompagne avec attention pour trouver la propriété qui vous correspond.</p>
-                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./achat.webp" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison résidentielle"></div>
+                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./achat.webp" class="w-full h-[125%] object-cover object-center opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison résidentielle"></div>
                 </div>
                 <div class="service-card group gsap-reveal flex flex-col h-full">
                     <span class="text-brand-red font-serif italic text-2xl block mb-6">02</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-red transition-colors">Vente</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Du premier contact à la signature, une mise en marché soignée et un accompagnement personnalisé pour vendre au meilleur prix.</p>
-                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./vente.webp" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
+                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./vente.webp" class="w-full h-[125%] object-cover object-[center_78%] opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
                 </div>
                 <div class="service-card group gsap-reveal flex flex-col h-full">
                     <span class="text-white/40 font-serif italic text-2xl block mb-6">03</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4">Évaluation</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Estimation précise et confidentielle, sans engagement, en toute transparence.</p>
-                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./eval.webp" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation de propriété"></div>
+                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./eval.jpg" class="w-full h-[125%] object-cover object-[center_62%] opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation de propriété"></div>
                 </div>
             </div>
         </div>
@@ -708,7 +708,7 @@
                 gsap.to(el, { opacity: 1, y: 0, duration: 1, delay: i * 0.15, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
             });
             gsap.utils.toArray('.service-card .img-wrap img').forEach(img => {
-                gsap.to(img, { yPercent: 12, ease: 'none', scrollTrigger: { trigger: img.closest('.service-card'), start: 'top bottom', end: 'bottom top', scrub: true } });
+                gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: img.closest('.service-card'), start: 'top bottom', end: 'bottom top', scrub: true } });
             });
             const aboutImg = document.querySelector('.about-image img');
             if (aboutImg) gsap.to(aboutImg, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.about-image', start: 'top bottom', end: 'bottom top', scrub: true } });
