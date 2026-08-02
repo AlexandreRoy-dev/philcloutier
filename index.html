@@ -170,35 +170,25 @@
 
         .philosophy-pillar {
             position: relative;
-            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(35, 35, 35, 0.08);
+            padding: 2.75rem 2rem 2.5rem;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.5s ease;
         }
-        .philosophy-pillar:hover { transform: translateY(-4px); }
-        .philosophy-pillar .pillar-num {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-style: italic;
-            font-size: 4.5rem;
-            line-height: 1;
-            color: rgba(0, 61, 165, 0.08);
-            transition: color 0.4s ease;
+        .philosophy-pillar:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 61, 165, 0.18);
+            box-shadow: 0 18px 40px rgba(35, 35, 35, 0.06);
         }
-        .philosophy-pillar:hover .pillar-num { color: rgba(220, 28, 46, 0.12); }
         .philosophy-pillar .pillar-icon {
-            width: 1px; height: 48px;
-            background: linear-gradient(to bottom, #DC1C2E, transparent);
+            width: 3.5rem; height: 3.5rem;
             margin: 0 auto 1.75rem;
-            transition: height 0.4s ease;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 9999px;
+            border: 1px solid currentColor;
+            transition: transform 0.4s ease, background-color 0.4s ease;
         }
-        .philosophy-pillar:hover .pillar-icon { height: 64px; }
-        @media (min-width: 768px) {
-            .philosophy-grid > .philosophy-pillar:not(:last-child)::after {
-                content: '';
-                position: absolute;
-                top: 10%; bottom: 10%;
-                right: -1.5rem;
-                width: 1px;
-                background: linear-gradient(to bottom, transparent, rgba(35,35,35,0.12), transparent);
-            }
-        }
+        .philosophy-pillar:hover .pillar-icon { transform: scale(1.06); }
 
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease; opacity: 0; }
         .faq-item.active .faq-answer { max-height: 500px; opacity: 1; }
@@ -398,22 +388,19 @@
                 <p class="text-brand-gray font-light text-base md:text-lg leading-relaxed max-w-lg mx-auto">Trois engagements qui guident chaque mandat — avec la même intensité, du premier échange à la signature.</p>
                 <div class="mt-10 mx-auto w-10 h-px bg-brand-red/50"></div>
             </div>
-            <div class="philosophy-grid grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 lg:gap-x-24">
+            <div class="philosophy-grid grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 <article class="philosophy-pillar text-center gsap-reveal">
-                    <span class="pillar-num block select-none" aria-hidden="true">01</span>
-                    <div class="pillar-icon" aria-hidden="true"></div>
+                    <div class="pillar-icon text-brand-red/40" aria-hidden="true"><i class="fa-solid fa-comments text-brand-red text-xl"></i></div>
                     <h3 class="text-2xl lg:text-[1.75rem] font-serif text-brand-dark mb-4 tracking-tight">Écoute</h3>
                     <p class="text-brand-gray font-light leading-[1.75] text-[0.95rem] max-w-[280px] mx-auto">Comprendre vos besoins, vos priorités et votre rythme avant toute décision.</p>
                 </article>
                 <article class="philosophy-pillar text-center gsap-reveal">
-                    <span class="pillar-num block select-none" aria-hidden="true">02</span>
-                    <div class="pillar-icon" aria-hidden="true"></div>
+                    <div class="pillar-icon text-brand-blue/40" aria-hidden="true"><i class="fa-solid fa-handshake text-brand-blue text-xl"></i></div>
                     <h3 class="text-2xl lg:text-[1.75rem] font-serif text-brand-dark mb-4 tracking-tight">Accompagnement</h3>
                     <p class="text-brand-gray font-light leading-[1.75] text-[0.95rem] max-w-[280px] mx-auto">Un suivi attentif et rassurant, du premier contact jusqu'à la remise des clés.</p>
                 </article>
                 <article class="philosophy-pillar text-center gsap-reveal">
-                    <span class="pillar-num block select-none" aria-hidden="true">03</span>
-                    <div class="pillar-icon" aria-hidden="true"></div>
+                    <div class="pillar-icon text-brand-dark/25" aria-hidden="true"><i class="fa-solid fa-heart text-brand-dark text-xl"></i></div>
                     <h3 class="text-2xl lg:text-[1.75rem] font-serif text-brand-dark mb-4 tracking-tight">Confiance</h3>
                     <p class="text-brand-gray font-light leading-[1.75] text-[0.95rem] max-w-[280px] mx-auto">Des conseils clairs et honnêtes pour que vous avanciez en toute sérénité.</p>
                 </article>
