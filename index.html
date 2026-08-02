@@ -168,6 +168,38 @@
         }
         .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.1); }
 
+        .philosophy-pillar {
+            position: relative;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .philosophy-pillar:hover { transform: translateY(-4px); }
+        .philosophy-pillar .pillar-num {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
+            font-size: 4.5rem;
+            line-height: 1;
+            color: rgba(0, 61, 165, 0.08);
+            transition: color 0.4s ease;
+        }
+        .philosophy-pillar:hover .pillar-num { color: rgba(220, 28, 46, 0.12); }
+        .philosophy-pillar .pillar-icon {
+            width: 1px; height: 48px;
+            background: linear-gradient(to bottom, #DC1C2E, transparent);
+            margin: 0 auto 1.75rem;
+            transition: height 0.4s ease;
+        }
+        .philosophy-pillar:hover .pillar-icon { height: 64px; }
+        @media (min-width: 768px) {
+            .philosophy-grid > .philosophy-pillar:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                top: 10%; bottom: 10%;
+                right: -1.5rem;
+                width: 1px;
+                background: linear-gradient(to bottom, transparent, rgba(35,35,35,0.12), transparent);
+            }
+        }
+
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease; opacity: 0; }
         .faq-item.active .faq-answer { max-height: 500px; opacity: 1; }
         .faq-item.active .faq-icon { transform: rotate(45deg); color: #DC1C2E; }
@@ -356,57 +388,69 @@
     </section>
 
     <!-- Philosophie -->
-    <section id="philosophie" class="py-24 lg:py-32 px-6 bg-[#EEEDE8] border-b border-gray-200/40">
-        <div class="max-w-[1400px] mx-auto">
-            <div class="text-center mb-16 gsap-reveal">
-                <p class="text-brand-blue text-xs font-semibold tracking-[0.2em] uppercase mb-4">Ma philosophie</p>
-                <h2 class="text-3xl md:text-5xl font-serif text-brand-dark">Un service à votre mesure.</h2>
+    <section id="philosophie" class="relative py-28 lg:py-40 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-[#F4F2EC]"></div>
+        <div class="absolute inset-0 opacity-[0.35]" style="background-image:radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,61,165,0.06), transparent 60%);"></div>
+        <div class="relative max-w-[1200px] mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20 lg:mb-28 gsap-reveal">
+                <p class="text-brand-red text-[11px] font-semibold tracking-[0.28em] uppercase mb-5">Ma philosophie</p>
+                <h2 class="text-4xl md:text-5xl lg:text-[3.5rem] font-serif text-brand-dark leading-[1.15] mb-6">Un service à votre mesure.</h2>
+                <p class="text-brand-gray font-light text-base md:text-lg leading-relaxed max-w-lg mx-auto">Trois engagements qui guident chaque mandat — avec la même intensité, du premier échange à la signature.</p>
+                <div class="mt-10 mx-auto w-10 h-px bg-brand-red/50"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                <div class="text-center p-10 bg-brand-bg border border-gray-200/60 gsap-reveal">
-                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-red/30 rounded-full"><i class="fa-solid fa-comments text-brand-red text-xl"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Écoute</h3>
-                    <p class="text-brand-gray font-light leading-relaxed">Comprendre vos besoins, vos priorités et votre rythme avant toute décision.</p>
-                </div>
-                <div class="text-center p-10 bg-brand-bg border border-gray-200/60 gsap-reveal">
-                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-blue/30 rounded-full"><i class="fa-solid fa-handshake text-brand-blue text-xl"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Accompagnement</h3>
-                    <p class="text-brand-gray font-light leading-relaxed">Un suivi attentif et rassurant, du premier contact jusqu'à la remise des clés.</p>
-                </div>
-                <div class="text-center p-10 bg-brand-bg border border-gray-200/60 gsap-reveal">
-                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-brand-dark/20 rounded-full"><i class="fa-solid fa-heart text-brand-dark text-xl"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Confiance</h3>
-                    <p class="text-brand-gray font-light leading-relaxed">Des conseils clairs et honnêtes pour que vous avanciez en toute sérénité.</p>
-                </div>
+            <div class="philosophy-grid grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 lg:gap-x-24">
+                <article class="philosophy-pillar text-center gsap-reveal">
+                    <span class="pillar-num block select-none" aria-hidden="true">01</span>
+                    <div class="pillar-icon" aria-hidden="true"></div>
+                    <h3 class="text-2xl lg:text-[1.75rem] font-serif text-brand-dark mb-4 tracking-tight">Écoute</h3>
+                    <p class="text-brand-gray font-light leading-[1.75] text-[0.95rem] max-w-[280px] mx-auto">Comprendre vos besoins, vos priorités et votre rythme avant toute décision.</p>
+                </article>
+                <article class="philosophy-pillar text-center gsap-reveal">
+                    <span class="pillar-num block select-none" aria-hidden="true">02</span>
+                    <div class="pillar-icon" aria-hidden="true"></div>
+                    <h3 class="text-2xl lg:text-[1.75rem] font-serif text-brand-dark mb-4 tracking-tight">Accompagnement</h3>
+                    <p class="text-brand-gray font-light leading-[1.75] text-[0.95rem] max-w-[280px] mx-auto">Un suivi attentif et rassurant, du premier contact jusqu'à la remise des clés.</p>
+                </article>
+                <article class="philosophy-pillar text-center gsap-reveal">
+                    <span class="pillar-num block select-none" aria-hidden="true">03</span>
+                    <div class="pillar-icon" aria-hidden="true"></div>
+                    <h3 class="text-2xl lg:text-[1.75rem] font-serif text-brand-dark mb-4 tracking-tight">Confiance</h3>
+                    <p class="text-brand-gray font-light leading-[1.75] text-[0.95rem] max-w-[280px] mx-auto">Des conseils clairs et honnêtes pour que vous avanciez en toute sérénité.</p>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- À propos -->
-    <section id="a-propos" class="py-24 lg:py-40 px-6 bg-brand-bg">
-        <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            <div class="lg:col-span-5 gsap-reveal-left">
-                <div class="img-wrap aspect-[3/4] overflow-hidden relative group about-image">
-                    <img src="./philippe-cloutier-beige.jpg" alt="Philippe Cloutier, courtier immobilier" class="w-full h-full object-cover object-top">
-                    <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-brand-blue/80 to-transparent"></div>
-                    <div class="absolute bottom-6 left-6 right-6"><p class="text-white/90 text-xs tracking-[0.2em] uppercase font-medium">Premier achat · Maison familiale · Condo</p></div>
+    <section id="a-propos" class="relative py-24 lg:py-0 bg-brand-dark text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-40 pointer-events-none" style="background:radial-gradient(ellipse 60% 50% at 80% 20%, rgba(0,61,165,0.25), transparent 55%), radial-gradient(ellipse 40% 40% at 10% 90%, rgba(220,28,46,0.12), transparent 50%);"></div>
+        <div class="relative max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:min-h-[90vh]">
+            <div class="lg:col-span-5 gsap-reveal-left relative">
+                <div class="img-wrap about-image relative aspect-[4/5] lg:aspect-auto lg:absolute lg:inset-0 lg:h-full overflow-hidden">
+                    <img src="./philippe-cloutier-beige.jpg" alt="Philippe Cloutier, courtier immobilier" class="w-full h-full object-cover object-top scale-[1.02]">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-brand-dark/80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+                        <p class="text-[10px] tracking-[0.28em] uppercase text-white/70 font-medium border-t border-white/20 pt-5">Premier achat · Maison familiale · Condo</p>
+                    </div>
                 </div>
             </div>
-            <div class="lg:col-span-1 hidden lg:block"></div>
-            <div class="lg:col-span-6 gsap-reveal-right">
-                <p class="text-brand-blue text-xs font-semibold tracking-[0.2em] uppercase mb-6">À propos</p>
-                <h2 class="text-4xl lg:text-5xl font-serif text-brand-dark mb-10 leading-tight">Un service humain au cœur de vos projets.</h2>
-                <div class="space-y-8 text-brand-gray font-light text-lg leading-relaxed">
-                    <p class="text-xl lg:text-2xl font-serif italic text-brand-dark border-l-2 border-brand-red pl-6">Pour moi, l'immobilier, c'est avant tout une relation de confiance. J'écoute, je prends le temps de comprendre votre situation et je vous accompagne avec transparence, sans pression, à votre rythme.</p>
-                    <p>Je suis actif dans les <strong class="text-brand-dark font-medium">Laurentides, Lanaudière et Laval</strong>, et j'accompagne mes clients dans toutes sortes de projets : premier achat, maison familiale, condo. Peu importe l'objectif, vous avez un partenaire attentif à vos côtés. Chaque mandat est unique, et c'est cette approche personnalisée qui fait la différence.</p>
-                    <p>Que vous soyez acheteur ou vendeur, je suis là pour vous guider avec clarté et bienveillance tout au long du processus, jusqu'à ce que vous ayez en main <strong class="text-brand-dark font-medium">les clés de votre nouveau chapitre.</strong></p>
+            <div class="lg:col-span-7 gsap-reveal-right flex flex-col justify-center px-6 py-16 lg:py-24 lg:pl-16 xl:pl-24 lg:pr-12">
+                <p class="text-brand-red text-[11px] font-semibold tracking-[0.28em] uppercase mb-6">À propos</p>
+                <h2 class="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-6xl font-serif leading-[1.12] mb-10 max-w-xl">Un service humain<br class="hidden sm:block"> au cœur de vos projets.</h2>
+                <blockquote class="relative mb-12 max-w-xl">
+                    <span class="absolute -left-1 lg:-left-4 top-0 text-6xl lg:text-7xl font-serif text-brand-red/40 leading-none select-none" aria-hidden="true">“</span>
+                    <p class="font-serif italic text-xl lg:text-2xl text-white/90 leading-relaxed pl-6 lg:pl-8 border-l border-brand-red">Pour moi, l'immobilier, c'est avant tout une relation de confiance. J'écoute, je prends le temps de comprendre votre situation et je vous accompagne avec transparence, sans pression, à votre rythme.</p>
+                </blockquote>
+                <div class="space-y-6 text-white/55 font-light text-base lg:text-lg leading-[1.8] max-w-xl">
+                    <p>Je suis actif dans les <strong class="text-white font-medium">Laurentides, Lanaudière et Laval</strong>, et j'accompagne mes clients dans toutes sortes de projets : premier achat, maison familiale, condo. Peu importe l'objectif, vous avez un partenaire attentif à vos côtés. Chaque mandat est unique, et c'est cette approche personnalisée qui fait la différence.</p>
+                    <p>Que vous soyez acheteur ou vendeur, je suis là pour vous guider avec clarté et bienveillance tout au long du processus, jusqu'à ce que vous ayez en main <strong class="text-white font-medium">les clés de votre nouveau chapitre.</strong></p>
                 </div>
-                <div class="mt-12 flex items-center gap-4">
-                    <img src="./philippe-cloutier-beige.jpg" alt="Philippe Cloutier" class="w-16 h-16 rounded-full object-cover object-top border-2 border-brand-blue/20">
+                <div class="mt-14 pt-8 border-t border-white/10 flex flex-wrap items-end justify-between gap-6 max-w-xl">
                     <div>
-                        <p class="text-brand-dark font-semibold">Philippe Cloutier</p>
-                        <p class="text-xs text-brand-gray uppercase tracking-widest mt-1">Courtier immobilier résidentiel</p>
+                        <p class="font-serif text-2xl italic text-white">Philippe Cloutier</p>
+                        <p class="text-[10px] text-white/45 uppercase tracking-[0.22em] mt-2">Courtier immobilier résidentiel · RE/MAX CRYSTAL</p>
                     </div>
+                    <a href="#contact" class="hover-target btn-lux text-[11px] tracking-[0.2em] uppercase text-white/70 pb-1 border-b border-white/20 hover:text-white transition-colors">Discutons <i class="fa-solid fa-arrow-right icon-inline text-xs"></i></a>
                 </div>
             </div>
         </div>
@@ -459,19 +503,19 @@
                     <span class="text-brand-blue font-serif italic text-2xl block mb-6">01</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-blue transition-colors">Achat</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Premier achat, maison familiale ou condo. Je vous accompagne avec attention pour trouver la propriété qui vous correspond.</p>
-                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./achat.webp" class="w-full h-[125%] object-cover object-center opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison résidentielle"></div>
+                    <div class="img-wrap aspect-[3/2] mt-auto w-full"><img src="./achat.webp" class="w-full h-full object-cover object-bottom opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison résidentielle"></div>
                 </div>
                 <div class="service-card group gsap-reveal flex flex-col h-full">
                     <span class="text-brand-red font-serif italic text-2xl block mb-6">02</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4 group-hover:text-brand-red transition-colors">Vente</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Du premier contact à la signature, une mise en marché soignée et un accompagnement personnalisé pour vendre au meilleur prix.</p>
-                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./vente.webp" class="w-full h-[125%] object-cover object-[center_78%] opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
+                    <div class="img-wrap aspect-[3/2] mt-auto w-full"><img src="./vente.webp" class="w-full h-full object-cover object-bottom opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Maison familiale à vendre"></div>
                 </div>
                 <div class="service-card group gsap-reveal flex flex-col h-full">
                     <span class="text-white/40 font-serif italic text-2xl block mb-6">03</span>
                     <h3 class="text-2xl lg:text-3xl font-serif mb-4">Évaluation</h3>
                     <p class="text-white/60 font-light leading-relaxed mb-8">Estimation précise et confidentielle, sans engagement, en toute transparence.</p>
-                    <div class="img-wrap aspect-[4/3] mt-auto w-full"><img src="./eval.jpg" class="w-full h-[125%] object-cover object-[center_62%] opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation de propriété"></div>
+                    <div class="img-wrap aspect-[3/2] mt-auto w-full"><img src="./eval.jpg" class="w-full h-full object-cover object-bottom opacity-50 group-hover:opacity-100 transition-opacity duration-700" alt="Évaluation de propriété"></div>
                 </div>
             </div>
         </div>
@@ -758,9 +802,6 @@
             gsap.utils.toArray('.gsap-reveal-right').forEach(el => gsap.to(el, { opacity: 1, x: 0, duration: 1.2, scrollTrigger: { trigger: el, start: 'top 85%', once: true } }));
             gsap.utils.toArray('.service-card').forEach((el, i) => {
                 gsap.to(el, { opacity: 1, y: 0, duration: 1, delay: i * 0.15, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
-            });
-            gsap.utils.toArray('.service-card .img-wrap img').forEach(img => {
-                gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: img.closest('.service-card'), start: 'top bottom', end: 'bottom top', scrub: true } });
             });
             const aboutImg = document.querySelector('.about-image img');
             if (aboutImg) gsap.to(aboutImg, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.about-image', start: 'top bottom', end: 'bottom top', scrub: true } });
