@@ -285,26 +285,6 @@
         .lenis.lenis-smooth { scroll-behavior: auto !important; }
         .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
 
-        @media (pointer: fine) {
-            body:not(.no-custom-cursor) { cursor: none; }
-        }
-
-        #cursor-dot, #cursor-ring {
-            position: fixed; top: 0; left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-        }
-        #cursor-dot { width: 6px; height: 6px; background-color: #003DA5; transition: background-color 0.3s ease; }
-        #cursor-ring {
-            width: 40px; height: 40px;
-            border: 1px solid rgba(0, 61, 165, 0.4);
-            transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-        }
-        body.hovering #cursor-ring { width: 60px; height: 60px; background-color: rgba(220, 28, 46, 0.05); border-color: #DC1C2E; }
-        body.hovering #cursor-dot { background-color: #DC1C2E; }
-
         section { scroll-margin-top: 6rem; }
 
         .gsap-reveal { opacity: 0; transform: translateY(60px); }
@@ -446,47 +426,56 @@
         .nav-link:hover::after { transform: scaleX(1); }
 
         .hero-portrait {
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-        .hero-portrait::after {
-            content: '';
-            position: absolute;
-            bottom: 0; right: 0;
-            width: 40%; height: 3px;
-            background: linear-gradient(90deg, transparent, #DC1C2E);
-            z-index: 3;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
         }
         .hero-portrait-blend {
             pointer-events: none;
-            background:
-                linear-gradient(to top, rgba(20, 20, 22, 0.92) 0%, transparent 38%),
-                linear-gradient(to right, rgba(0, 0, 0, 0.45) 0%, transparent 28%),
-                linear-gradient(to left, rgba(0, 0, 0, 0.25) 0%, transparent 22%),
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 18%),
-                linear-gradient(135deg, rgba(0, 61, 165, 0.18) 0%, transparent 45%, rgba(220, 28, 46, 0.1) 100%);
-        }
-        .hero-portrait img {
-            filter: contrast(1.04) saturate(0.92) brightness(0.96);
+            background: linear-gradient(to top, rgba(20, 20, 22, 0.85) 0%, transparent 40%);
         }
         @media (min-width: 1024px) {
-            .hero-portrait {
-                border-color: transparent !important;
-                box-shadow: none;
-                -webkit-mask-image: radial-gradient(ellipse 78% 82% at 48% 42%, #000 38%, rgba(0,0,0,0.85) 58%, transparent 78%);
-                mask-image: radial-gradient(ellipse 78% 82% at 48% 42%, #000 38%, rgba(0,0,0,0.85) 58%, transparent 78%);
+            .hero-section {
+                align-items: stretch;
             }
-            .hero-portrait::after { opacity: 0.7; }
+            .hero-grid {
+                min-height: calc(100vh - 0px);
+                align-items: center;
+            }
+            .hero-photo-wrap {
+                align-self: end;
+                height: min(88vh, 820px);
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .hero-portrait {
+                width: 100%;
+                max-width: 26rem;
+                height: 100%;
+                aspect-ratio: auto;
+                border: none !important;
+                box-shadow: none;
+                /* Dissolve into the video (bottom + left) — cinematic cutout */
+                -webkit-mask-image:
+                    linear-gradient(to bottom, #000 0%, #000 62%, transparent 100%),
+                    linear-gradient(to right, transparent 0%, #000 16%, #000 100%);
+                -webkit-mask-composite: source-in;
+                mask-image:
+                    linear-gradient(to bottom, #000 0%, #000 62%, transparent 100%),
+                    linear-gradient(to right, transparent 0%, #000 16%, #000 100%);
+                mask-composite: intersect;
+            }
             .hero-portrait img {
-                transform: scale(1.04);
-                filter: contrast(1.06) saturate(0.88) brightness(0.94);
+                object-position: center top;
+                filter: contrast(1.05) saturate(0.9) brightness(0.97);
             }
             .hero-portrait-blend {
                 background:
-                    linear-gradient(to top, rgba(20, 20, 22, 0.75) 0%, transparent 42%),
-                    linear-gradient(to right, rgba(0, 0, 0, 0.35) 0%, transparent 35%),
-                    linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, transparent 30%),
-                    linear-gradient(135deg, rgba(0, 61, 165, 0.22) 0%, transparent 50%, rgba(220, 28, 46, 0.12) 100%);
-                mix-blend-mode: soft-light;
+                    linear-gradient(to top, rgba(18, 18, 20, 0.55) 0%, transparent 45%),
+                    linear-gradient(to right, rgba(0, 0, 0, 0.25) 0%, transparent 40%);
+            }
+            .hero-copy-col {
+                padding-bottom: 8vh;
             }
         }
 
@@ -522,9 +511,6 @@
 </head>
 <body class="bg-brand-bg text-brand-dark font-sans antialiased selection:bg-brand-blue selection:text-white">
 
-    <div id="cursor-dot" class="hidden md:block"></div>
-    <div id="cursor-ring" class="hidden md:block"></div>
-
     <nav class="fixed w-full z-50 transition-all duration-500 py-5 px-6 lg:px-16" id="navbar">
         <div class="max-w-[1400px] mx-auto flex justify-between items-center">
             <a href="#" class="flex items-center gap-4 hover-target z-10" id="logo">
@@ -540,7 +526,7 @@
                 <a href="#contact" class="hover-target nav-link">Contact</a>
             </div>
             <div class="flex items-center gap-4 z-10">
-                <a href="tel:438-495-4079" id="nav-phone" class="hidden md:block hover-target text-white mix-blend-difference font-serif italic tracking-wider text-base lg:text-lg transition-colors duration-500">(438) 495-4079</a>
+                <a href="tel:438-495-4079" id="nav-phone" class="hidden md:block hover-target text-white mix-blend-difference font-sans font-medium tracking-[0.12em] text-sm lg:text-base tabular-nums transition-colors duration-500">(438) 495-4079</a>
                 <button id="menu-btn" class="lg:hidden hover-target text-white mix-blend-difference w-10 h-10 flex flex-col justify-center items-center gap-1.5" aria-label="Menu">
                     <span class="bar-1 w-6"></span>
                     <span class="bar-2 w-6"></span>
@@ -560,12 +546,12 @@
             <a href="#temoignages" class="mobile-nav-link text-2xl font-serif hover-target">Témoignages</a>
             <a href="#faq" class="mobile-nav-link text-2xl font-serif hover-target">FAQ</a>
             <a href="#contact" class="mobile-nav-link text-2xl font-serif hover-target">Contact</a>
-            <a href="tel:438-495-4079" class="mt-8 text-brand-red font-serif italic text-xl hover-target">(438) 495-4079</a>
+            <a href="tel:438-495-4079" class="mt-8 text-brand-red font-sans font-medium tracking-[0.12em] text-lg tabular-nums hover-target">(438) 495-4079</a>
         </nav>
     </div>
 
     <!-- Hero -->
-    <section class="relative min-h-screen w-full flex items-center overflow-hidden bg-brand-dark">
+    <section class="hero-section relative min-h-screen w-full flex items-center overflow-hidden bg-brand-dark">
         <div class="absolute inset-0 parallax-hero overflow-hidden">
             <img src="./achat.webp" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover hero-bg-fallback opacity-90 brightness-105">
             <video class="absolute inset-0 w-full h-full object-cover hero-bg opacity-90 brightness-105" autoplay loop muted playsinline preload="metadata" poster="./achat.webp">
@@ -573,18 +559,19 @@
                 <source src="./bannervid.mov" type="video/mp4">
             </video>
         </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70 hero-overlay"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/15 to-brand-red/10 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/45 via-black/25 to-black/75 hero-overlay"></div>
+        <!-- Deeper left wash so Philippe's black studio ground merges with the scene -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent lg:from-black/80 lg:via-black/30"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/12 to-transparent mix-blend-multiply"></div>
 
-        <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-16 pt-28 pb-24 lg:py-32">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-                <!-- Portrait + mobile text overlay -->
+        <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-16 pt-28 pb-16 lg:pt-24 lg:pb-0">
+            <div class="hero-grid grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-16">
+                <!-- Portrait — cinematic cutout into video on desktop -->
                 <div class="hero-photo-wrap lg:col-span-5 hero-photo">
-                    <div class="hero-portrait relative w-full aspect-[3/4] overflow-hidden border border-white/10 lg:w-80 xl:w-96">
+                    <div class="hero-portrait relative w-full aspect-[3/4] overflow-hidden border border-white/10 lg:w-full">
                         <img src="./philippe-cloutier.avif" alt="Philippe Cloutier" class="w-full h-full object-cover object-top">
                         <div class="hero-portrait-blend absolute inset-0 z-[1]" aria-hidden="true"></div>
-                        <div class="absolute inset-0 z-[2] bg-gradient-to-t from-black/70 via-black/20 to-transparent lg:from-black/40 lg:via-transparent pointer-events-none"></div>
+                        <div class="absolute inset-0 z-[2] bg-gradient-to-t from-black/70 via-black/15 to-transparent lg:hidden pointer-events-none"></div>
                     </div>
                     <div class="hero-copy-mobile lg:hidden">
                         <p class="hero-name text-white font-serif">Philippe Cloutier</p>
@@ -594,8 +581,8 @@
                     </div>
                 </div>
 
-                <!-- Desktop copy + mobile extras below portrait -->
-                <div class="lg:col-span-7 text-center lg:text-left">
+                <!-- Desktop copy -->
+                <div class="hero-copy-col lg:col-span-7 text-center lg:text-left flex flex-col justify-center">
                     <div class="hidden lg:block">
                         <p class="hero-name text-white text-2xl sm:text-3xl lg:text-4xl font-serif mb-2">Philippe Cloutier</p>
                         <p class="hero-title text-white/90 text-sm sm:text-base tracking-[0.15em] uppercase font-medium mb-1">Courtier immobilier résidentiel</p>
@@ -823,7 +810,7 @@
                     <div><p class="text-white/40 text-xs tracking-[0.2em] uppercase mb-2">Courtier</p><p class="text-xl font-light">Philippe Cloutier</p><p class="text-sm text-white/50 mt-1">RE/MAX CRYSTAL · Équipe Lamarche Troini</p></div>
                     <div>
                         <p class="text-white/40 text-xs tracking-[0.2em] uppercase mb-2">Coordonnées</p>
-                        <a href="tel:438-495-4079" class="block text-xl font-light hover:text-brand-blue transition-colors hover-target mb-2">(438) 495-4079</a>
+                        <a href="tel:438-495-4079" class="block text-xl font-sans font-light tracking-[0.08em] tabular-nums hover:text-brand-blue transition-colors hover-target mb-2">(438) 495-4079</a>
                         <a href="mailto:philippe.cloutier@equipelamarche.com" class="block text-lg font-light hover:text-brand-red transition-colors hover-target">philippe.cloutier@equipelamarche.com</a>
                     </div>
                     <div><p class="text-white/40 text-xs tracking-[0.2em] uppercase mb-2">Territoire</p><p class="text-xl font-light">Saint-Eustache</p><p class="text-sm text-white/50 mt-1">Laurentides · Lanaudière · Laval</p></div>
@@ -1039,16 +1026,6 @@
         } catch (e) {
             revealStatic();
         }
-        const cursorDot = document.getElementById('cursor-dot'), cursorRing = document.getElementById('cursor-ring');
-        let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-        if (window.matchMedia('(pointer: fine)').matches) {
-            document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; cursorDot.style.left = mouseX + 'px'; cursorDot.style.top = mouseY + 'px'; });
-            (function renderCursor() { ringX += (mouseX - ringX) * 0.15; ringY += (mouseY - ringY) * 0.15; cursorRing.style.left = ringX + 'px'; cursorRing.style.top = ringY + 'px'; requestAnimationFrame(renderCursor); })();
-        } else document.body.classList.add('no-custom-cursor');
-        document.querySelectorAll('.hover-target, a, button, input, select, textarea, label').forEach(t => {
-            t.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
-            t.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
-        });
         const navBg = document.getElementById('nav-bg'), logo = document.getElementById('logo'), logoText = document.getElementById('logo-text'), navRemaxLogo = document.getElementById('nav-remax-logo'), navLinks = document.getElementById('nav-links'), menuBtn = document.getElementById('menu-btn'), navPhone = document.getElementById('nav-phone');
         function updateNav() {
             const scrolled = window.scrollY > 50;
