@@ -1,0 +1,37 @@
+name: Sync RE/MAX listings
+
+on:
+  schedule:
+    # 12:30 and 22:30 UTC, about 08:30 and 18:30 in Montréal.
+    - cron: "30 12 * * *"
+    - cron: "30 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-listings
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh listings from RE/MAX Québec
+        run: node scripts/sync-listings.mjs
+      - name: Commit snapshot when listings changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/listings.json proprietes index.html sitemap.xml
+          if git diff --staged --quiet; then
+            echo "No listing changes."
+          else
+            git commit -m "Sync RE/MAX listings"
+            git push
+          fi
