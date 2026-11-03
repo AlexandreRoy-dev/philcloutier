@@ -175,7 +175,8 @@ export function normalizeListing(detail, searchItem) {
     latitude: address.latitude ?? null,
     longitude: address.longitude ?? null,
     showMap: Boolean(detail.flag_show_map && address.latitude != null && address.longitude != null),
-    datePosted: detail.created_at || null
+    datePosted: detail.created_at || null,
+    updatedAt: detail.last_modified || null
   };
   return listing;
 }

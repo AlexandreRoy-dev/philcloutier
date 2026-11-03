@@ -20,6 +20,8 @@ Pour lancer une synchro à la main :
 node scripts/sync-listings.mjs
 ```
 
+Les pages vendues sont retirées du `sitemap.xml` (et marquées `noindex`). Une inscription qui disparaît de RE/MAX est aussi retirée du dossier `proprietes/` et du sitemap à la synchro suivante. `robots.txt` pointe vers le sitemap. Les adresses inconnues servent `404.html`.
+
 Pour reconstruire le HTML à partir de l'instantané, sans rappel réseau :
 
 ```bash
