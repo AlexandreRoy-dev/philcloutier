@@ -1,0 +1,886 @@
+{
+  "source": "https://www.remax-quebec.com/fr/courtiers-immobiliers/philippe.cloutier",
+  "brokerSlug": "philippe.cloutier",
+  "brokerId": 25624,
+  "syncedAt": "2026-11-03T18:21:05.725Z",
+  "listings": [
+    {
+      "id": "22144424",
+      "centris": "22144424",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": {
+        "label": "Visite libre ce samedi",
+        "from": "2026-11-07T12:00:00-05:00",
+        "to": "2026-11-07T14:00:00-05:00",
+        "text": "Visite libre ce samedi · samedi 7 novembre 2026 à 12 h 00 au samedi 7 novembre 2026 à 14 h 00"
+      },
+      "priceDisplay": "324 900$",
+      "priceAmount": 324900,
+      "priceKind": "sale",
+      "address": "204 Rue Brébeuf",
+      "city": "Papineauville",
+      "cityFull": "Papineauville",
+      "region": "Outaouais",
+      "postalCode": "J0V1R0",
+      "streetNumber": "204",
+      "streetName": "Rue Brébeuf",
+      "unit": null,
+      "propertyKind": "Maison de plain-pied",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "2 chambres",
+      "bedroomsCount": 2,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": null,
+      "livingArea": null,
+      "landArea": "1 190,10 m²",
+      "descriptionText": "Superbe propriété située à Papineauville, à proximité des écoles, commerces et services. Elle offre un salon lumineux, une cuisine fonctionnelle rénovée en 2025, deux chambres, dont la principale avec walk-in, et une salle de bain rénovée en 2024. Plusieurs améliorations ont été réalisées depuis 2024 : fenêtres, portes extérieures, thermopompe murale, isolation de la fondation à l'uréthane, ajout de laine soufflée à l'entretoit, remplacement de plusieurs tuyaux et planchers. Portes intérieures et plinthes électriques remplacées en 2026. Grande cour gazonnée bordée d'arbres matures.",
+      "descriptionHtml": "Superbe propriété située à Papineauville, à proximité des écoles, commerces et services. Elle offre un salon lumineux, une cuisine fonctionnelle rénovée en 2025, deux chambres, dont la principale avec walk-in, et une salle de bain rénovée en 2024. Plusieurs améliorations ont été réalisées depuis 2024 : fenêtres, portes extérieures, thermopompe murale, isolation de la fondation à l'uréthane, ajout de laine soufflée à l'entretoit, remplacement de plusieurs tuyaux et planchers. Portes intérieures et plinthes électriques remplacées en 2026. Grande cour gazonnée bordée d'arbres matures.",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-pri01-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sal02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sal02-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sal03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sal03-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sam04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sam04-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sal05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sal05-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sal06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sal06-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sam07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sam07-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sam08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sam08-01.jpg"
+        },
+        {
+          "alt": "Hall d'entrée",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-hal09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-hal09-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-cui10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-cui10-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-cui11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-cui11-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m22144424-sam12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m22144424-sam12-01.jpg"
+        }
+      ],
+      "photoCount": 36,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/maison-a-vendre-outaouais/204-rue-brebeuf-papineauville-22144424",
+      "latitude": 45.6156626,
+      "longitude": -75.012355,
+      "showMap": true,
+      "datePosted": "2026-09-17T04:00:00.000000Z"
+    },
+    {
+      "id": "14442444",
+      "centris": "14442444",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "749 900$ +TPS/TVQ",
+      "priceAmount": 749900,
+      "priceKind": "sale",
+      "address": "180 Allée du 2e",
+      "city": "Mont-Blanc",
+      "cityFull": "Mont-Blanc",
+      "region": "Laurentides",
+      "postalCode": "J0T2G0",
+      "streetNumber": "180",
+      "streetName": "Allée du 2e",
+      "unit": null,
+      "propertyKind": "Maison de plain-pied",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "3 chambres",
+      "bedroomsCount": 3,
+      "bathrooms": "2 salles de bain",
+      "bathroomsCount": 2,
+      "powderRooms": null,
+      "livingArea": null,
+      "landArea": "5 040,90 m²",
+      "descriptionText": "Splendide propriété moderne offre un cadre de vie paisible et intimiste sur un terrain boisé. Son impressionnante fenestration sur deux niveaux, son plafond cathédrale et son aire de vie lumineuse créent un effet spectaculaire. Elle propose une cuisine avec grand îlot, un espace polyvalent « Mood Room », trois chambres, deux salles de bains, une vaste salle familiale, une terrasse couverte et un spa. Location touristique de type Airbnb permise. À proximité des stations de ski Mont-Blanc et Mont-Tremblant, des sentiers, golfs, spas et services essentiels. Une occasion unique dans les Laurentides",
+      "descriptionHtml": "Splendide propriété moderne offre un cadre de vie paisible et intimiste sur un terrain boisé. Son impressionnante fenestration sur deux niveaux, son plafond cathédrale et son aire de vie lumineuse créent un effet spectaculaire. Elle propose une cuisine avec grand îlot, un espace polyvalent « Mood Room », trois chambres, deux salles de bains, une vaste salle familiale, une terrasse couverte et un spa. Location touristique de type Airbnb permise. À proximité des stations de ski Mont-Blanc et Mont-Tremblant, des sentiers, golfs, spas et services essentiels. Une occasion unique dans les Laurentides",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-pri01-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-vde02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-vde02-01.jpg"
+        },
+        {
+          "alt": "Façade",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-fac03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-fac03-01.jpg"
+        },
+        {
+          "alt": "Face arrière",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-far04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-far04-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-cui05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-cui05-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-cui06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-cui06-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-cui07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-cui07-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-cui08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-cui08-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-cui09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-cui09-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-cui10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-cui10-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-sam11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-sam11-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14442444-sam12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14442444-sam12-01.jpg"
+        }
+      ],
+      "photoCount": 64,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/maison-a-vendre-laurentides/180-allee-du-2e-st-faustin-lac-carre-14442444",
+      "latitude": 46.113779688,
+      "longitude": -74.414093298,
+      "showMap": true,
+      "datePosted": "2026-06-16T04:00:00.000000Z"
+    },
+    {
+      "id": "14713117",
+      "centris": "14713117",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "749 900$ +TPS/TVQ",
+      "priceAmount": 749900,
+      "priceKind": "sale",
+      "address": "184 Allée du 2e",
+      "city": "Mont-Blanc",
+      "cityFull": "Mont-Blanc",
+      "region": "Laurentides",
+      "postalCode": "J0T2G0",
+      "streetNumber": "184",
+      "streetName": "Allée du 2e",
+      "unit": null,
+      "propertyKind": "Maison de plain-pied",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "3 chambres",
+      "bedroomsCount": 3,
+      "bathrooms": "2 salles de bain",
+      "bathroomsCount": 2,
+      "powderRooms": null,
+      "livingArea": null,
+      "landArea": "4 806,60 m²",
+      "descriptionText": "Splendide propriété moderne offre un cadre de vie paisible et intimiste sur un terrain boisé. Son impressionnante fenestration sur deux niveaux, son plafond cathédrale et son aire de vie lumineuse créent un effet spectaculaire. Elle propose une cuisine avec grand îlot, un espace polyvalent « Mood Room », trois chambres, deux salles de bains, une vaste salle familiale, une terrasse couverte et un spa. Location touristique de type Airbnb permise. À proximité des stations de ski Mont-Blanc et Mont-Tremblant, des sentiers, golfs, spas et services essentiels. Une occasion unique dans les Laurentides",
+      "descriptionHtml": "Splendide propriété moderne offre un cadre de vie paisible et intimiste sur un terrain boisé. Son impressionnante fenestration sur deux niveaux, son plafond cathédrale et son aire de vie lumineuse créent un effet spectaculaire. Elle propose une cuisine avec grand îlot, un espace polyvalent « Mood Room », trois chambres, deux salles de bains, une vaste salle familiale, une terrasse couverte et un spa. Location touristique de type Airbnb permise. À proximité des stations de ski Mont-Blanc et Mont-Tremblant, des sentiers, golfs, spas et services essentiels. Une occasion unique dans les Laurentides",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-pri01-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-sam02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-sam02-01.jpg"
+        },
+        {
+          "alt": "Façade",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-fac03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-fac03-01.jpg"
+        },
+        {
+          "alt": "Face arrière",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-far04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-far04-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-vde05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-vde05-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-cui06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-cui06-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-cui07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-cui07-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-cui08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-cui08-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-cui09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-cui09-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-vde10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-vde10-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-vde11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-vde11-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14713117-cui12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14713117-cui12-01.jpg"
+        }
+      ],
+      "photoCount": 66,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/maison-a-vendre-laurentides/184-allee-du-2e-st-faustin-lac-carre-14713117",
+      "latitude": 46.113021058,
+      "longitude": -74.413363738,
+      "showMap": true,
+      "datePosted": "2026-06-15T04:00:00.000000Z"
+    },
+    {
+      "id": "21665836",
+      "centris": "21665836",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "649 900$",
+      "priceAmount": 649900,
+      "priceKind": "sale",
+      "address": "381Z Rue René-Lecavalier",
+      "city": "Terrebonne",
+      "cityFull": "Terrebonne (Terrebonne) (Côte Terrebonne)",
+      "region": "Lanaudière",
+      "postalCode": "J7Y0N5",
+      "streetNumber": "381Z",
+      "streetName": "Rue René-Lecavalier",
+      "unit": null,
+      "propertyKind": "Maison à étages",
+      "propertyType": "En rangée",
+      "bedrooms": "3 chambres",
+      "bedroomsCount": 3,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": "2 salles d'eau",
+      "livingArea": "98,80 m²",
+      "landArea": null,
+      "descriptionText": "Découvrez cette superbe copropriété de style maison de ville, construite en 2017, au coeur du projet MDV3 à Terrebonne! Offrant une aire de vie lumineuse, une cuisine moderne avec îlot central, deux chambres avec walk-in et une salle de bain complète. La mezzanine polyvalente donne accès à une magnifique terrasse privée sur le toit. Le sous-sol propose une salle familiale, une salle d'eau et du rangement. Garage privé intégré. Profitez également des installations du projet : piscine extérieure, chalet urbain, parcs, aires de jeux et sentiers piétonniers. Un cadre de vie exceptionnel alliant confort et modernité!",
+      "descriptionHtml": "Découvrez cette superbe copropriété de style maison de ville, construite en 2017, au coeur du projet MDV3 à Terrebonne! Offrant une aire de vie lumineuse, une cuisine moderne avec îlot central, deux chambres avec walk-in et une salle de bain complète. La mezzanine polyvalente donne accès à une magnifique terrasse privée sur le toit. Le sous-sol propose une salle familiale, une salle d'eau et du rangement. Garage privé intégré. Profitez également des installations du projet : piscine extérieure, chalet urbain, parcs, aires de jeux et sentiers piétonniers. Un cadre de vie exceptionnel alliant confort et modernité!",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-pri01-01.jpg"
+        },
+        {
+          "alt": "Vue aérienne",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-aer02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-aer02-01.jpg"
+        },
+        {
+          "alt": "Cour arrière",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-cou03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-cou03-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sal04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sal04-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sal05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sal05-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sal06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sal06-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sal07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sal07-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-vde08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-vde08-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-vde09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-vde09-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sam10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sam10-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sam11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sam11-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21665836-sam12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21665836-sam12-01.jpg"
+        }
+      ],
+      "photoCount": 62,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/maison-a-vendre-lanaudiere/381z-rue-rene-lecavalier-terrebonne-terrebonne-cote-terrebonne-21665836",
+      "latitude": 45.6820936,
+      "longitude": -73.7357686,
+      "showMap": true,
+      "datePosted": "2026-10-23T04:00:00.000000Z"
+    },
+    {
+      "id": "13596025",
+      "centris": "13596025",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "649 900$",
+      "priceAmount": 649900,
+      "priceKind": "sale",
+      "address": "381 Rue René-Lecavalier",
+      "city": "Terrebonne",
+      "cityFull": "Terrebonne (Terrebonne) (Côte Terrebonne)",
+      "region": "Lanaudière",
+      "postalCode": "J6Y0N5",
+      "streetNumber": "381",
+      "streetName": "Rue René-Lecavalier",
+      "unit": null,
+      "propertyKind": "Maison à étages",
+      "propertyType": "En rangée",
+      "bedrooms": "3 chambres",
+      "bedroomsCount": 3,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": "2 salles d'eau",
+      "livingArea": "98,80 m²",
+      "landArea": null,
+      "descriptionText": "Découvrez cette superbe copropriété de style maison de ville, construite en 2017, au coeur du projet MDV3 à Terrebonne! Offrant une aire de vie lumineuse, une cuisine moderne avec îlot central, deux chambres avec walk-in et une salle de bain complète. La mezzanine polyvalente donne accès à une magnifique terrasse privée sur le toit. Le sous-sol propose une salle familiale, une salle d'eau et du rangement. Garage privé intégré. Profitez également des installations du projet : piscine extérieure, chalet urbain, parcs, aires de jeux et sentiers piétonniers. Un cadre de vie exceptionnel alliant confort et modernité!",
+      "descriptionHtml": "Découvrez cette superbe copropriété de style maison de ville, construite en 2017, au coeur du projet MDV3 à Terrebonne! Offrant une aire de vie lumineuse, une cuisine moderne avec îlot central, deux chambres avec walk-in et une salle de bain complète. La mezzanine polyvalente donne accès à une magnifique terrasse privée sur le toit. Le sous-sol propose une salle familiale, une salle d'eau et du rangement. Garage privé intégré. Profitez également des installations du projet : piscine extérieure, chalet urbain, parcs, aires de jeux et sentiers piétonniers. Un cadre de vie exceptionnel alliant confort et modernité!",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-pri01-01.jpg"
+        },
+        {
+          "alt": "Terrasse",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-tse02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-tse02-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-vde03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-vde03-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sal04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sal04-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sal05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sal05-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sal06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sal06-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-vde07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-vde07-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sam08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sam08-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sam09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sam09-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sam10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sam10-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-sam11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-sam11-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13596025-cui12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13596025-cui12-01.jpg"
+        }
+      ],
+      "photoCount": 57,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/maison-a-vendre-lanaudiere/381-rue-rene-lecavalier-terrebonne-terrebonne-cote-terrebonne-13596025",
+      "latitude": 45.6820936,
+      "longitude": -73.7357686,
+      "showMap": true,
+      "datePosted": "2026-10-19T04:00:00.000000Z"
+    },
+    {
+      "id": "21771906",
+      "centris": "21771906",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "495 000$",
+      "priceAmount": 495000,
+      "priceKind": "sale",
+      "address": "100 Rue des Manoirs app. 308",
+      "city": "Deux-Montagnes",
+      "cityFull": "Deux-Montagnes (Nord)",
+      "region": "Laval/Rive-Nord",
+      "postalCode": "J7R0B3",
+      "streetNumber": "100",
+      "streetName": "Rue des Manoirs",
+      "unit": "308",
+      "propertyKind": "Appartement - Condominium",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "2 chambres",
+      "bedroomsCount": 2,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": null,
+      "livingArea": "94 m²",
+      "landArea": null,
+      "descriptionText": "Superbe condo de coin situé au 3e étage avec ascenseur, à distance de marche du REM! Baignée de lumière naturelle, cette unité offre une aire de vie à concept ouvert, 2 chambres spacieuses, une salle de bain avec bain et douche indépendante ainsi qu'une salle de lavage fermée. Profitez d'un grand balcon avec vue sur les couchers de soleil, de 2 stationnements extérieurs et d'un rangement au garage. Sans voisin à l'arrière, l'immeuble offre interphone et chutes à déchets et recyclage. Situé sur une rue tranquille, à proximité de l'A-640, des écoles, parcs, commerces et services. Une occasion à saisir!",
+      "descriptionHtml": "Superbe condo de coin situé au 3e étage avec ascenseur, à distance de marche du REM! Baignée de lumière naturelle, cette unité offre une aire de vie à concept ouvert, 2 chambres spacieuses, une salle de bain avec bain et douche indépendante ainsi qu'une salle de lavage fermée. Profitez d'un grand balcon avec vue sur les couchers de soleil, de 2 stationnements extérieurs et d'un rangement au garage. Sans voisin à l'arrière, l'immeuble offre interphone et chutes à déchets et recyclage. Situé sur une rue tranquille, à proximité de l'A-640, des écoles, parcs, commerces et services. Une occasion à saisir!",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-pri01-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-vde02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-vde02-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cui03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cui03-01.jpg"
+        },
+        {
+          "alt": "Chambre à coucher",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cac04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cac04-01.jpg"
+        },
+        {
+          "alt": "Chambre à coucher",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cac05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cac05-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-vde06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-vde06-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cui07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cui07-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cui08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cui08-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cui09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cui09-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-cui10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-cui10-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-vde11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-vde11-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m21771906-sam12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m21771906-sam12-01.jpg"
+        }
+      ],
+      "photoCount": 35,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/condo-a-vendre-laval-rive-nord/100-rue-des-manoirs-deux-montagnes-nord-21771906",
+      "latitude": 45.5427546,
+      "longitude": -73.9181946,
+      "showMap": true,
+      "datePosted": "2026-10-17T04:00:00.000000Z"
+    },
+    {
+      "id": "13402360",
+      "centris": "13402360",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "484 900$",
+      "priceAmount": 484900,
+      "priceKind": "sale",
+      "address": "83 Ch. des Îles-Yale app. 204",
+      "city": "Saint-Eustache",
+      "cityFull": "Saint-Eustache (Est)",
+      "region": "Laval/Rive-Nord",
+      "postalCode": "J7P5M5",
+      "streetNumber": "83",
+      "streetName": "Ch. des Îles-Yale",
+      "unit": "204",
+      "propertyKind": "Appartement - Condominium",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "3 chambres",
+      "bedroomsCount": 3,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": "1 salle d'eau",
+      "livingArea": "112,30 m²",
+      "landArea": null,
+      "descriptionText": "Superbe condo aménagé sur deux niveaux, offrant une vaste aire de vie ouverte réunissant salon, salle à manger et cuisine moderne avec nombreuses armoires, grand comptoir et généreuses surfaces de travail. La fenestration abondante procure une belle luminosité naturelle. Salle d'eau avec espace laveuse-sécheuse. À l'étage, 3 chambres ainsi qu'une salle de bain avec double lavabo, bain et douche indépendante. Stationnement et rangement extérieur. Emplacement paisible près de la rivière des Mille Îles, des écoles, parcs, commerces, services et des autoroutes 13, 15 et 640.",
+      "descriptionHtml": "Superbe condo aménagé sur deux niveaux, offrant une vaste aire de vie ouverte réunissant salon, salle à manger et cuisine moderne avec nombreuses armoires, grand comptoir et généreuses surfaces de travail. La fenestration abondante procure une belle luminosité naturelle. Salle d'eau avec espace laveuse-sécheuse. À l'étage, 3 chambres ainsi qu'une salle de bain avec double lavabo, bain et douche indépendante. Stationnement et rangement extérieur. Emplacement paisible près de la rivière des Mille Îles, des écoles, parcs, commerces, services et des autoroutes 13, 15 et 640.",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-pri01-01.jpg"
+        },
+        {
+          "alt": "Face arrière",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-far02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-far02-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-sal03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-sal03-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-sam04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-sam04-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-sal05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-sal05-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-sal06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-sal06-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-sal07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-sal07-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-sal08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-sal08-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-cui09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-cui09-01.jpg"
+        },
+        {
+          "alt": "Vue extérieure",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-vue10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-vue10-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-cui11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-cui11-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m13402360-cui12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m13402360-cui12-01.jpg"
+        }
+      ],
+      "photoCount": 48,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/condo-a-vendre-laval-rive-nord/83-ch-des-iles-yale-saint-eustache-est-13402360",
+      "latitude": 45.5815886,
+      "longitude": -73.8556026,
+      "showMap": true,
+      "datePosted": "2026-10-01T04:00:00.000000Z"
+    },
+    {
+      "id": "18249507",
+      "centris": "18249507",
+      "status": "a-vendre",
+      "statusLabel": "À vendre",
+      "openHouse": null,
+      "priceDisplay": "399 900$",
+      "priceAmount": 399900,
+      "priceKind": "sale",
+      "address": "1316 Île du Canard-Blanc",
+      "city": "Lac-Simon",
+      "cityFull": "Lac-Simon",
+      "region": "Outaouais",
+      "postalCode": "J0V1E0",
+      "streetNumber": "1316",
+      "streetName": "Île du Canard-Blanc",
+      "unit": null,
+      "propertyKind": "Maison de plain-pied",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "3 chambres",
+      "bedroomsCount": 3,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": null,
+      "livingArea": null,
+      "landArea": "2 516 m²",
+      "descriptionText": "Superbe chalet situé sur une île du splendide Lac Simon, offrant un cadre de vie unique au coeur de la nature. Son aire ouverte lumineuse, son plafond cathédrale, ses boiseries chaleureuses et son poêle à bois créent une ambiance des plus accueillantes. La propriété comprend deux chambres au rez-de-chaussée, une salle de bain ainsi qu'une vaste mezzanine polyvalente. À l'extérieur, profitez d'une terrasse intime entourée d'arbres matures et d'un accès privilégié au lac. Plusieurs améliorations ont été réalisées, dont des travaux de pieutage en 2021. Un véritable havre de paix pour les amateurs de nature et de plein air.",
+      "descriptionHtml": "Superbe chalet situé sur une île du splendide Lac Simon, offrant un cadre de vie unique au coeur de la nature. Son aire ouverte lumineuse, son plafond cathédrale, ses boiseries chaleureuses et son poêle à bois créent une ambiance des plus accueillantes. La propriété comprend deux chambres au rez-de-chaussée, une salle de bain ainsi qu'une vaste mezzanine polyvalente. À l'extérieur, profitez d'une terrasse intime entourée d'arbres matures et d'un accès privilégié au lac. Plusieurs améliorations ont été réalisées, dont des travaux de pieutage en 2021. Un véritable havre de paix pour les amateurs de nature et de plein air.",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-pri01-01.jpg"
+        },
+        {
+          "alt": "Vue sur l'eau",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-vea02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-vea02-01.jpg"
+        },
+        {
+          "alt": "Vue aérienne",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-aer03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-aer03-01.jpg"
+        },
+        {
+          "alt": "Vue aérienne",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-aer04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-aer04-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-vde05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-vde05-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-vde06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-vde06-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-sal07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-sal07-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-sal08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-sal08-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-sal09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-sal09-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-sal10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-sal10-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-sal11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-sal11-01.jpg"
+        },
+        {
+          "alt": "Salon",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m18249507-sal12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m18249507-sal12-01.jpg"
+        }
+      ],
+      "photoCount": 51,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/maison-a-vendre-outaouais/1316-ile-du-canard-blanc-lac-simon-18249507",
+      "latitude": 45.9475736,
+      "longitude": -75.0934656,
+      "showMap": true,
+      "datePosted": "2026-05-28T04:00:00.000000Z"
+    },
+    {
+      "id": "14701202",
+      "centris": "14701202",
+      "status": "a-louer",
+      "statusLabel": "À louer",
+      "openHouse": null,
+      "priceDisplay": "1 350$ par mois",
+      "priceAmount": 1350,
+      "priceKind": "rent",
+      "address": "27 Rue de l'Ancre",
+      "city": "Saint-Eustache",
+      "cityFull": "Saint-Eustache (Ouest)",
+      "region": "Laval/Rive-Nord",
+      "postalCode": "J7R2E4",
+      "streetNumber": "27",
+      "streetName": "Rue de l'Ancre",
+      "unit": null,
+      "propertyKind": "Appartement - Condominium",
+      "propertyType": "Détaché / Isolé",
+      "bedrooms": "1 chambre",
+      "bedroomsCount": 1,
+      "bathrooms": "1 salle de bain",
+      "bathroomsCount": 1,
+      "powderRooms": null,
+      "livingArea": "518 pi²",
+      "landArea": null,
+      "descriptionText": "OPPORTUNITÉ DE LOCATION - 3 ½ À SAINT-EUSTACHE! Situé au 2e étage, ce charmant logement offre une disposition fonctionnelle et conviviale. Vous y trouverez une cuisine, une salle à manger et un salon lumineux à aire ouverte, 1 chambre à coucher ainsi qu'une salle de bain avec bain-douche. Profitez d'un emplacement pratique à proximité des commerces, restaurants, épiceries, parcs, pistes cyclables, installations sportives et principaux axes routiers. Un milieu de vie agréable combinant commodité, espaces verts et proximité des services!",
+      "descriptionHtml": "OPPORTUNITÉ DE LOCATION - 3 ½ À SAINT-EUSTACHE! Situé au 2e étage, ce charmant logement offre une disposition fonctionnelle et conviviale. Vous y trouverez une cuisine, une salle à manger et un salon lumineux à aire ouverte, 1 chambre à coucher ainsi qu'une salle de bain avec bain-douche. Profitez d'un emplacement pratique à proximité des commerces, restaurants, épiceries, parcs, pistes cyclables, installations sportives et principaux axes routiers. Un milieu de vie agréable combinant commodité, espaces verts et proximité des services!",
+      "photos": [
+        {
+          "alt": "Photo principale",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-pri01-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-pri01-01.jpg"
+        },
+        {
+          "alt": "Salle à manger",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-sam02-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-sam02-01.jpg"
+        },
+        {
+          "alt": "Chambre à coucher",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac03-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac03-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cui04-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cui04-01.jpg"
+        },
+        {
+          "alt": "Cuisine",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cui05-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cui05-01.jpg"
+        },
+        {
+          "alt": "Corridor",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cor06-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cor06-01.jpg"
+        },
+        {
+          "alt": "Salle de bains",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-sdb07-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-sdb07-01.jpg"
+        },
+        {
+          "alt": "Chambre à coucher",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac08-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac08-01.jpg"
+        },
+        {
+          "alt": "Chambre à coucher",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac09-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac09-01.jpg"
+        },
+        {
+          "alt": "Chambre à coucher",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac10-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac10-01.jpg"
+        },
+        {
+          "alt": "Vue d'ensemble",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-vde11-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-vde11-01.jpg"
+        },
+        {
+          "alt": "Façade",
+          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-fac12-01.jpg",
+          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-fac12-01.jpg"
+        }
+      ],
+      "photoCount": 13,
+      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/condo-a-louer-laval-rive-nord/27-rue-de-l-ancre-saint-eustache-ouest-14701202",
+      "latitude": 45.5616876,
+      "longitude": -73.9030626,
+      "showMap": true,
+      "datePosted": "2026-09-04T04:00:00.000000Z"
+    }
+  ]
+}
