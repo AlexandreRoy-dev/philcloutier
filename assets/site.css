@@ -495,6 +495,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   gap: 3rem;
   align-items: center;
 }
+.town-links { display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; list-style: none; margin: 1.5rem 0 0; padding: 0; }
+.town-links a { text-decoration: none; border-bottom: 1px solid var(--line-strong); }
+.town-links a:hover { border-bottom-color: var(--ink); }
 .team-logos { display: flex; flex-wrap: wrap; gap: 1.5rem 2rem; align-items: center; margin: 1.5rem 0 0; }
 .team-logos img { height: 52px; width: auto; max-width: 240px; object-fit: contain; }
 
