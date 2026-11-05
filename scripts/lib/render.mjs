@@ -264,15 +264,19 @@ export function cardHtml(listing, eager) {
   const photo = listing.photos[0];
   const statusClass = listing.status === "vendu" ? " card-status badge-sold" : " card-status";
   const open = listing.openHouse ? `<p class="card-note">${esc(listing.openHouse.label || listing.openHouse.text)}</p>` : "";
+  const cityLabel = listing.city || listing.cityFull || "";
+  const media = photo
+    ? `<img src="${esc(photo.medium)}" alt="${esc(cardAlt(listing))}" width="960" height="720"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" onerror="this.closest('.card-media').classList.add('is-missing')">`
+    : "";
   return `<article class="card" data-city="${esc(listing.city || "")}" data-kind="${esc(listing.propertyKind || "")}" data-status="${esc(listing.status)}" data-open-house="${listing.openHouse ? "1" : "0"}" data-price="${listing.priceKind === "sale" && listing.priceAmount != null ? esc(listing.priceAmount) : ""}" data-price-kind="${esc(listing.priceKind)}">
-  <a class="card-media" href="/proprietes/${esc(listing.id)}/">
-    ${photo ? `<img src="${esc(photo.medium)}" alt="${esc(cardAlt(listing))}" width="960" height="720"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">` : ""}
+  <a class="card-media${photo ? "" : " is-missing"}" href="/proprietes/${esc(listing.id)}/">
+    ${media}
     <span class="${statusClass.trim()}">${esc(listing.statusLabel)}</span>
   </a>
   <div class="card-body">
     ${listing.priceDisplay ? `<p class="card-price">${esc(listing.priceDisplay)}</p>` : ""}
     <h3><a href="/proprietes/${esc(listing.id)}/">${esc(listing.address || "Propriété")}</a></h3>
-    ${listing.city ? `<p class="card-city">${esc(listing.city)}</p>` : ""}
+    ${cityLabel ? `<p class="card-city">${esc(cityLabel)}</p>` : ""}
     ${metaLine(listing) ? `<p class="card-meta">${esc(metaLine(listing))}</p>` : ""}
     ${open}
     <div class="card-foot">
@@ -284,8 +288,7 @@ export function cardHtml(listing, eager) {
 }
 
 export function featuredHtml(listings) {
-  const featured = listings.filter((item) => item.status !== "a-louer").slice(0, 3);
-  const chosen = featured.length ? featured : listings.slice(0, 3);
+  const chosen = listings.filter((item) => item.status === "a-vendre" || item.status === "a-louer");
   if (!chosen.length) {
     return `<p class="lede">Les inscriptions seront affichées ici dès que la page courtier RE/MAX répond.</p>`;
   }
@@ -300,7 +303,7 @@ export function featuredHtml(listings) {
       name: [item.address, item.city].filter(Boolean).join(", ")
     }))
   };
-  return `<div class="feature-grid" data-anim>\n${chosen.map((item, index) => cardHtml(item, index === 0)).join("\n")}\n</div>\n<script type="application/ld+json">\n${JSON.stringify(list)}\n</script>`;
+  return `<div class="listing-grid">\n${chosen.map((item, index) => cardHtml(item, index === 0)).join("\n")}\n</div>\n<script type="application/ld+json">\n${JSON.stringify(list)}\n</script>`;
 }
 
 function options(values) {
