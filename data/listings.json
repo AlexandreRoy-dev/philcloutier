@@ -2,7 +2,7 @@
   "source": "https://www.remax-quebec.com/fr/courtiers-immobiliers/philippe.cloutier",
   "brokerSlug": "philippe.cloutier",
   "brokerId": 25624,
-  "syncedAt": "2026-11-05T20:10:34.573Z",
+  "syncedAt": "2026-11-06T02:45:47.019Z",
   "listings": [
     {
       "id": "22144424",
@@ -792,104 +792,6 @@
       "showMap": true,
       "datePosted": "2026-05-28T04:00:00.000000Z",
       "updatedAt": "2026-10-11T15:13:25.585924Z"
-    },
-    {
-      "id": "14701202",
-      "centris": "14701202",
-      "status": "a-louer",
-      "statusLabel": "À louer",
-      "openHouse": null,
-      "priceDisplay": "1 350$ par mois",
-      "priceAmount": 1350,
-      "priceKind": "rent",
-      "address": "27 Rue de l'Ancre",
-      "city": "Saint-Eustache",
-      "cityFull": "Saint-Eustache (Ouest)",
-      "region": "Laval/Rive-Nord",
-      "postalCode": "J7R2E4",
-      "streetNumber": "27",
-      "streetName": "Rue de l'Ancre",
-      "unit": null,
-      "propertyKind": "Appartement - Condominium",
-      "propertyType": "Détaché / Isolé",
-      "bedrooms": "1 chambre",
-      "bedroomsCount": 1,
-      "bathrooms": "1 salle de bain",
-      "bathroomsCount": 1,
-      "powderRooms": null,
-      "livingArea": "518 pi²",
-      "landArea": null,
-      "descriptionText": "OPPORTUNITÉ DE LOCATION - 3 ½ À SAINT-EUSTACHE! Situé au 2e étage, ce charmant logement offre une disposition fonctionnelle et conviviale. Vous y trouverez une cuisine, une salle à manger et un salon lumineux à aire ouverte, 1 chambre à coucher ainsi qu'une salle de bain avec bain-douche. Profitez d'un emplacement pratique à proximité des commerces, restaurants, épiceries, parcs, pistes cyclables, installations sportives et principaux axes routiers. Un milieu de vie agréable combinant commodité, espaces verts et proximité des services!",
-      "descriptionHtml": "OPPORTUNITÉ DE LOCATION - 3 ½ À SAINT-EUSTACHE! Situé au 2e étage, ce charmant logement offre une disposition fonctionnelle et conviviale. Vous y trouverez une cuisine, une salle à manger et un salon lumineux à aire ouverte, 1 chambre à coucher ainsi qu'une salle de bain avec bain-douche. Profitez d'un emplacement pratique à proximité des commerces, restaurants, épiceries, parcs, pistes cyclables, installations sportives et principaux axes routiers. Un milieu de vie agréable combinant commodité, espaces verts et proximité des services!",
-      "photos": [
-        {
-          "alt": "Photo principale",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-pri01-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-pri01-01.jpg"
-        },
-        {
-          "alt": "Salle à manger",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-sam02-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-sam02-01.jpg"
-        },
-        {
-          "alt": "Chambre à coucher",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac03-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac03-01.jpg"
-        },
-        {
-          "alt": "Cuisine",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cui04-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cui04-01.jpg"
-        },
-        {
-          "alt": "Cuisine",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cui05-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cui05-01.jpg"
-        },
-        {
-          "alt": "Corridor",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cor06-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cor06-01.jpg"
-        },
-        {
-          "alt": "Salle de bains",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-sdb07-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-sdb07-01.jpg"
-        },
-        {
-          "alt": "Chambre à coucher",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac08-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac08-01.jpg"
-        },
-        {
-          "alt": "Chambre à coucher",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac09-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac09-01.jpg"
-        },
-        {
-          "alt": "Chambre à coucher",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-cac10-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-cac10-01.jpg"
-        },
-        {
-          "alt": "Vue d'ensemble",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-vde11-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-vde11-01.jpg"
-        },
-        {
-          "alt": "Façade",
-          "large": "https://media.remax-quebec.com/img/www_large/0026/m14701202-fac12-01.jpg",
-          "medium": "https://media.remax-quebec.com/img/www_medium/0026/m14701202-fac12-01.jpg"
-        }
-      ],
-      "photoCount": 13,
-      "listingUrl": "https://www.remax-quebec.com/fr/proprietes/condo-a-louer-laval-rive-nord/27-rue-de-l-ancre-saint-eustache-ouest-14701202",
-      "latitude": 45.5616876,
-      "longitude": -73.9030626,
-      "showMap": true,
-      "datePosted": "2026-09-04T04:00:00.000000Z",
-      "updatedAt": "2026-11-05T16:04:26.077312Z"
     },
     {
       "id": "18580207",
